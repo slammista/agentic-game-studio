@@ -1,86 +1,231 @@
-# Game Studio OS
+# 🎮 Game Studio OS
 
-> Un sistema multi-agente che trasforma Claude Code nel tuo studio di sviluppo videoludico.  
-> 53 agenti specializzati. Una Knowledge Base condivisa. Zero overhead manuale.
+> **Trasforma Claude Code nel tuo studio AAA di sviluppo videoludico.**
+> 53 agenti specializzati. Una Knowledge Base condivisa. Pipeline di produzione completa.
+
+[![Claude Code](https://img.shields.io/badge/Claude_Code-Terminal_%2F_IDE-8A2BE2?style=flat-square&logo=anthropic)](https://claude.ai/code)
+[![Agents](https://img.shields.io/badge/Agenti-53-blue?style=flat-square)](/.claude/agents)
+[![Model](https://img.shields.io/badge/Model-Sonnet_%2F_Haiku-green?style=flat-square)](https://anthropic.com)
+[![License](https://img.shields.io/badge/Licenza-MIT-yellow?style=flat-square)](LICENSE)
 
 ---
 
 ## Cos'è
 
-Game Studio OS replica la struttura organizzativa di uno studio professionale AAA all'interno di Claude Code. Ogni membro del team — dal Game Director al Dialogue Writer, dal Concept Artist al QA Lead — è un agente autonomo con ruolo definito, autorità precisa e accesso limitato alla Knowledge Base.
+Game Studio OS replica la struttura di uno **studio professionale AAA** direttamente in Claude Code. Ogni membro del team — dal Game Director al Dialogue Writer, dal Concept Artist al QA Lead — è un agente autonomo con ruolo definito, autorità precisa e accesso limitato alla Knowledge Base.
 
-Non è un chatbot a cui chiedere idee. È un sistema di produzione: i contenuti vengono creati, validati dal QA, approvati dal Director e salvati nella Knowledge Base in formato Markdown pronto all'uso.
+Non è un chatbot a cui chiedere idee. È un **sistema di produzione**: i contenuti vengono creati, validati dal QA, approvati dal Director e salvati nella Knowledge Base in Markdown pronto all'uso.
+
+> ⚠️ **Funziona solo con Claude Code (terminale/IDE).** Claude Desktop non supporta il sistema di agenti con accesso al filesystem. Vedi la [sezione installazione](#installazione-e-setup--guida-completa).
+
+---
+
+## 🏢 L'ecosistema dello studio
 
 ```
-Utente → Game Director → Orchestratori di macroarea → Specialist → KB → QA → Approvazione
+┌─────────────────────────────────────────────────────────────────┐
+│                        🎮 GAME STUDIO OS                        │
+│                                                                 │
+│                    👤 UTENTE (tu)                               │
+│                         │                                       │
+│                         ▼                                       │
+│              ┌─────────────────────┐                            │
+│              │   🎬 GAME DIRECTOR  │  ← Visione, approvazioni   │
+│              │   dir-game-director │    batch, arbitraggio      │
+│              └──────────┬──────────┘                            │
+│                         │ dispatcha                             │
+│         ┌───────────────┼───────────────┐                       │
+│         ▼               ▼               ▼                       │
+│   ┌──────────┐   ┌──────────┐   ┌──────────┐                   │
+│   │ 🎨 ART   │   │ ✍️ NARR  │   │ 🕹️ DESIGN│  + altri...      │
+│   │ DIRECTOR │   │ DIRECTOR │   │ LEAD     │                   │
+│   └────┬─────┘   └────┬─────┘   └────┬─────┘                   │
+│        │              │              │                          │
+│        ▼              ▼              ▼                          │
+│   Specialist      Specialist     Specialist                     │
+│   viz-*           narr-*         design-*                       │
+│        │              │              │                          │
+│        └──────────────┼──────────────┘                          │
+│                       ▼                                         │
+│              ┌─────────────────┐                                │
+│              │  📚 KNOWLEDGE   │  ← Tutto salvato in            │
+│              │     BASE        │    Markdown strutturato        │
+│              └────────┬────────┘                                │
+│                       │                                         │
+│                       ▼                                         │
+│              ┌─────────────────┐                                │
+│              │  🔍 QA LEAD     │  ← Valida prima               │
+│              │  + cross-domain │    dell'approvazione           │
+│              └────────┬────────┘                                │
+│                       │                                         │
+│                       ▼                                         │
+│              ✅ APPROVAZIONE DIRECTOR                           │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Agenti inclusi (53)
+## 🗂️ I dipartimenti
 
-| Prefisso | Macroarea | Agenti |
-|---|---|---|
-| `dir-` | Direzione | Game Director, Producer, Art/Narrative/Technical Director, Lead Designer, PM |
-| `design-` | Game Design | World, Game, Systems, Quest, Character, Level, Encounter Designer |
-| `narr-` | Narrativa | Narrative Designer, Lore Designer/Writer, Dialogue Writer, Character Writer, Content Writer, Technical Designer |
-| `viz-` | Visual & Audio | Concept Artist, 3D Character/Environment Artist, Texture Artist, Rigger, Animator, UI/UX, VFX, Sound Designer, Composer, Technical Artist |
-| `qa-` | Quality Assurance | QA Lead, QA Tester, Narrative QA, UX Researcher, Cross-Domain Validator, Security Guard |
-| `biz-` | Business & Lancio | Marketing Manager, PR Manager, Community Manager, Data Analyst, Live Ops Producer, Customer Support, Video Editor, Localization Manager |
-| `prog-` | Programmazione | Lead, Gameplay, UI, AI, Tools, Audio Programmer *(STUB — attivi solo con codebase reale)* |
-| infra | Infrastruttura KB | KB Librarian *(auto-index e session manifest)* |
+```
+┌────────────────────┬──────────────────────────────────────────────────────┐
+│ 🎬 DIREZIONE       │ Game Director · Producer · Art/Narrative/Technical    │
+│ dir-*              │ Director · Lead Designer · Project Manager            │
+├────────────────────┼──────────────────────────────────────────────────────┤
+│ 🕹️ GAME DESIGN     │ World · Game · Systems · Quest · Character ·          │
+│ design-*           │ Level · Encounter Designer                            │
+├────────────────────┼──────────────────────────────────────────────────────┤
+│ ✍️ NARRATIVA        │ Narrative Designer · Lore Designer/Writer ·           │
+│ narr-*             │ Dialogue Writer · Character Writer · Content Writer   │
+├────────────────────┼──────────────────────────────────────────────────────┤
+│ 🎨 VISUAL & AUDIO  │ Concept Artist · 3D Character/Environment Artist ·    │
+│ viz-*              │ Texture · Rigger · Animator · UI/UX · VFX ·           │
+│                    │ Sound Designer · Composer · Technical Artist          │
+├────────────────────┼──────────────────────────────────────────────────────┤
+│ 🔍 QUALITY         │ QA Lead · QA Tester · Narrative QA · UX Researcher ·  │
+│ qa-*               │ Cross-Domain Validator · Security Guard               │
+├────────────────────┼──────────────────────────────────────────────────────┤
+│ 📣 BUSINESS        │ Marketing Manager · PR Manager · Community Manager ·  │
+│ biz-*              │ Data Analyst · Live Ops Producer · Customer Support · │
+│                    │ Video Editor · Localization Manager                   │
+├────────────────────┼──────────────────────────────────────────────────────┤
+│ 💻 PROGRAMMAZIONE  │ Lead · Gameplay · UI · AI · Tools · Audio Programmer  │
+│ prog-* (STUB)      │ ⚠️ Attivi solo quando esiste una codebase reale        │
+├────────────────────┼──────────────────────────────────────────────────────┤
+│ 📚 INFRASTRUTTURA  │ KB Librarian (auto-index · session manifest)          │
+└────────────────────┴──────────────────────────────────────────────────────┘
+```
 
 ---
 
-## Installazione e setup — Guida completa per principianti
+## 📚 La Knowledge Base
+
+Ogni contenuto prodotto viene salvato automaticamente in `knowledge_base/`, organizzato per dominio. Gli agenti leggono **solo** le cartelle di loro competenza — nessuno carica l'intera KB.
+
+```
+knowledge_base/
+│
+├── 🌍 world/           → continenti, geografia
+├── 👥 characters/      → schede personaggio
+├── ⚔️  factions/        → fazioni e organizzazioni
+├── 🗺️  regions/         → regioni e città
+├── 📅 timeline/        → cronologia eventi
+│
+├── 📖 narrative/       → trama, archi, finali
+├── 💬 dialogue/        → dialoghi e scene
+├── 📜 lore/            → lore, in-world documents
+│
+├── 🎯 quests/          → missioni principali e secondarie
+├── ⚙️  systems/         → meccaniche, economia, bilanciamento
+├── 🏰 levels/          → layout, blockout, encounter
+│
+├── 🎨 art_direction/   → stile visivo e mood board
+├── 🖼️  assets_visual/   → concept, 3D, texture, UI, VFX
+├── 🎵 assets_audio/    → musica e sound effects
+│
+├── 📊 production/      → GDD, roadmap, sessioni, approvazioni
+├── 📣 marketing/       → strategia, store page, press kit
+├── 📈 live_ops/        → eventi, metriche, supporto
+│
+├── ✅ qa_reports/      → bug, report narrativi, UX
+├── 🌐 i18n/            → traduzioni per lingue attive
+└── 🧪 staging/         → output DRY-RUN (non approvati)
+```
+
+---
+
+## ⚡ Come funziona in pratica
+
+Non serve sintassi speciale. Scrivi in linguaggio naturale e Claude dispaccia l'agente giusto.
+
+```
+Tu scrivi:                              Claude attiva:
+────────────────────────────────────────────────────────
+"Crea il continente principale"     →   design-world-designer
+"Scrivi il dialogo col villain"     →   narr-dialogue-writer
+"Bilancia il sistema di crafting"   →   design-systems-designer
+"Concept art per il protagonista"   →   viz-concept-artist
+"Valida la coerenza world/lore"     →   qa-cross-domain
+"Approva gli asset in pending"      →   dir-game-director
+```
+
+**Per forzare un agente specifico:**
+```
+"Usa design-quest-designer per la quest del villaggio abbandonato"
+```
+
+**Per task complessi (usa l'orchestratore di macroarea):**
+```
+"Chiedi a dir-lead-game-designer di coordinare world design e
+narrative per la prima area di gioco"
+```
+L'orchestratore gestisce in autonomia il dispatch agli specialist.
+
+---
+
+## 🔄 Pipeline di produzione
+
+```
+  CREAZIONE          VALIDAZIONE         APPROVAZIONE
+      │                   │                   │
+      ▼                   ▼                   ▼
+┌──────────┐       ┌──────────┐        ┌──────────────┐
+│Specialist│──────▶│ qa-lead  │───────▶│ dir-game-    │
+│  agent   │       │    +     │        │   director   │
+│          │       │ cross-   │        │ (batch, max  │
+│ draft    │       │ domain   │        │  10 asset)   │
+└──────────┘       └──────────┘        └──────┬───────┘
+                                              │
+                                              ▼
+                                    knowledge_base/
+                                    status: approved ✅
+```
+
+---
+
+## 🛠️ Installazione e setup — Guida completa
 
 > **Metodo consigliato: Claude Code nel terminale o nell'IDE.**
-> Rispetto alla versione web, hai sessioni persistenti, accesso diretto ai file della KB e nessuna latenza di sync. Gli agenti funzionano meglio quando possono leggere e scrivere file localmente in tempo reale.
+> Rispetto alla versione web, hai sessioni persistenti, accesso diretto ai file e nessuna latenza. Gli agenti funzionano meglio quando leggono e scrivono file localmente in tempo reale.
 
 ---
 
 ### Prerequisiti
 
-Prima di iniziare, assicurati di avere:
-
-- **Node.js 18 o superiore** — verifica con `node --version`. Se non ce l'hai, scaricalo da [nodejs.org](https://nodejs.org).
-- **Git** — verifica con `git --version`. Di solito è già installato su Mac e Linux. Su Windows usa [git-scm.com](https://git-scm.com).
-- **Un account Anthropic** — il piano Free funziona, ma è consigliato il piano **Pro** per usare Claude Code in modo continuativo nel terminale (limiti di utilizzo più alti e accesso a Sonnet senza interruzioni).
+| Strumento | Verifica | Link |
+|---|---|---|
+| **Node.js 18+** | `node --version` | [nodejs.org](https://nodejs.org) |
+| **Git** | `git --version` | [git-scm.com](https://git-scm.com) |
+| **Account Anthropic** | — | Il piano Free funziona; il piano **Pro** è consigliato per sessioni lunghe e limiti più alti |
 
 ---
 
 ### Passo 1 — Installa Claude Code
 
-Apri il terminale ed esegui:
-
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-Verifica che l'installazione sia andata a buon fine:
+Verifica:
 
 ```bash
 claude --version
+# Output atteso: 1.x.x
 ```
 
-Dovresti vedere un numero di versione (es. `1.x.x`). Se il comando non viene trovato, chiudi e riapri il terminale.
+Se il comando non viene trovato, chiudi e riapri il terminale.
 
 ---
 
-### Passo 2 — Autenticati con il tuo account Anthropic
+### Passo 2 — Autenticati
 
 ```bash
 claude
 ```
 
-Al primo avvio Claude Code ti chiederà di autenticarti. Segui le istruzioni a schermo:
+Al primo avvio si apre automaticamente il browser su `claude.ai`. Accedi, autorizza Claude Code, torna al terminale. Vedrai il prompt `>`.
 
-1. Verrà aperta automaticamente una pagina nel browser su `claude.ai`
-2. Accedi con il tuo account Anthropic
-3. Autorizza Claude Code
-4. Torna al terminale — vedrai il prompt `>` che indica che sei pronto
-
-> Se preferisci autenticarti con una API Key invece del browser:
+> Alternativa con API Key:
 > ```bash
 > export ANTHROPIC_API_KEY=sk-ant-...
 > claude
@@ -90,216 +235,137 @@ Al primo avvio Claude Code ti chiederà di autenticarti. Segui le istruzioni a s
 
 ### Passo 3 — Porta il sistema nel tuo progetto
 
-Game Studio OS non va usato direttamente come repository condivisa: va integrato **nel tuo progetto**, che avrà la sua repo GitHub indipendente con la sua Knowledge Base.
+> ⚠️ **Non lavorare direttamente su questa repo.** Crea la tua copia indipendente: ogni progetto ha la propria Knowledge Base e i propri contenuti.
 
-Hai due strade:
+#### Opzione A — Template GitHub (consigliato, per chi parte da zero)
 
----
+Vai su [github.com/slammista/Gaming-Agency](https://github.com/slammista/Gaming-Agency), clicca **"Use this template" → "Create a new repository"** e crea la tua copia personale.
 
-#### Opzione A — Usa questa repo come template (consigliato per iniziare da zero)
-
-Vai su [github.com/slammista/Gaming-Agency](https://github.com/slammista/Gaming-Agency) e clicca **"Use this template" → "Create a new repository"**.
-
-GitHub creerà una copia identica nella tua repository personale (`tuousername/NomeDelTuoGioco`), completamente scollegata da questa. Da quel momento lavori in autonomia sulla tua copia.
-
-Poi clona la tua nuova repo in locale:
+Poi clona la tua repo:
 
 ```bash
 git clone https://github.com/tuousername/NomeDelTuoGioco.git
 cd NomeDelTuoGioco
 ```
 
----
+#### Opzione B — Integra in un progetto già esistente
 
-#### Opzione B — Integra gli agenti in un progetto già esistente
-
-Se hai già una cartella/repo con il tuo progetto videoludico, puoi copiare solo i file necessari del sistema:
+Se hai già una repo con il tuo gioco, copia solo i file del sistema:
 
 ```bash
-# Clona temporaneamente questa repo in una cartella separata
+# Clona temporaneamente questa repo
 git clone https://github.com/slammista/Gaming-Agency.git /tmp/game-studio-os
 
-# Entra nella cartella del TUO progetto
+# Entra nella TUA cartella di progetto
 cd /path/al/tuo/progetto
 
 # Copia i file del sistema
 cp -r /tmp/game-studio-os/.claude .
-cp /tmp/game-studio-os/CLAUDE.md .
+cp    /tmp/game-studio-os/CLAUDE.md .
 cp -r /tmp/game-studio-os/knowledge_base .
 cp -r /tmp/game-studio-os/logs .
-cp /tmp/game-studio-os/roles.json .
+cp    /tmp/game-studio-os/roles.json .
 cp -r /tmp/game-studio-os/scripts .
 
 # Rimuovi la repo temporanea
 rm -rf /tmp/game-studio-os
-```
 
-Aggiungi e committa tutto nel tuo progetto:
-
-```bash
+# Committa nel tuo progetto
 git add .
 git commit -m "Add Game Studio OS multi-agent system"
 git push
 ```
 
-> La cartella `knowledge_base/` parte vuota — si popola man mano che gli agenti lavorano. Non condividerai mai i contenuti con altri utenti di questo template.
+> La `knowledge_base/` parte vuota e si popola man mano. I tuoi contenuti non sono mai condivisi con altri utenti del template.
 
 ---
 
-### Passo 4 — Avvia Claude Code nella cartella del tuo progetto
+### Passo 4 — Avvia Claude Code nella cartella del progetto
 
 ```bash
+cd NomeDelTuoGioco   # o la cartella del tuo progetto
 claude
 ```
 
-**Importante:** il comando va eseguito **dentro** la cartella del tuo progetto. Claude Code legge automaticamente:
-
-- `CLAUDE.md` — la costituzione del progetto (regole, architettura, modalità operativa)
-- `.claude/agents/*.md` — tutti i 53 agenti specializzati
-- `.claude/RULES_BASE.md` — le regole universali ereditate da tutti gli agenti
-
-Non devi fare nulla di speciale: basta avviare `claude` nella cartella giusta e il sistema è operativo.
+Claude legge automaticamente `CLAUDE.md` e scopre tutti i 53 agenti in `.claude/agents/`. Nessuna configurazione aggiuntiva.
 
 ---
 
 ### Passo 5 — Verifica che gli agenti siano caricati
 
-Una volta dentro Claude Code, digita:
-
 ```
 /agents
 ```
 
-Vedrai la lista di tutti gli agenti disponibili con la loro descrizione. Se vedi i 53 agenti (da `biz-community-manager` a `viz-vfx-artist`) il setup è completo.
-
-> Se non vedi gli agenti, assicurati di aver avviato `claude` dalla cartella `Gaming-Agency` e non da un'altra directory.
+Dovresti vedere 53 agenti elencati (da `biz-community-manager` a `viz-vfx-artist`). Se non li vedi, assicurati di essere nella cartella giusta.
 
 ---
 
-### Passo 6 — Prima sessione: inizia con il Game Director
-
-Per un nuovo progetto, il punto di ingresso consigliato è sempre il Game Director:
+### Passo 6 — Prima sessione
 
 ```
-Sono in fase di pre-produzione. Voglio creare un gioco di ruolo fantasy dark.
+Sono in pre-produzione. Voglio creare un gioco di ruolo fantasy dark.
 Chiedi al Game Director di avviare il progetto e definire la visione creativa.
 ```
 
-Il Game Director leggerà `knowledge_base/production/session_manifest.md` per capire lo stato del progetto (vuoto la prima volta), e potrà iniziare a delegare agli orchestratori di macroarea.
+Il Game Director legge `knowledge_base/production/session_manifest.md` per lo stato del progetto e inizia a delegare agli orchestratori.
 
 ---
 
-### Setup opzionale: estensione VS Code
+### Alternativa: estensione VS Code
 
-Se preferisci lavorare nell'IDE invece del terminale:
-
-1. Apri VS Code
-2. Vai su **Extensions** (`Ctrl+Shift+X` / `Cmd+Shift+X`)
-3. Cerca **"Claude Code"** e installa l'estensione Anthropic
-4. Apri la cartella `Gaming-Agency` in VS Code (`File → Open Folder`)
-5. Usa il pannello Claude Code nella sidebar — stesso comportamento del terminale
+1. Apri VS Code → **Extensions** (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+2. Cerca **"Claude Code"** → installa l'estensione Anthropic
+3. Apri la cartella del tuo progetto
+4. Usa il pannello Claude Code nella sidebar
 
 ---
 
-### Setup alternativo: Claude Code Web (senza installazione)
+### Alternativa: Claude Code Web
 
-Se non vuoi installare nulla in locale, puoi usare [claude.ai/code](https://claude.ai/code) (richiede piano Pro, Max o Team):
+[claude.ai/code](https://claude.ai/code) — connetti GitHub, seleziona la tua repo, Claude carica gli agenti automaticamente. Richiede piano Pro/Max/Team.
 
-1. Vai su [claude.ai/code](https://claude.ai/code) e accedi
-2. Clicca **"Connect GitHub"** e autorizza l'accesso
-3. Seleziona la repository `slammista/Gaming-Agency`
-4. Claude carica automaticamente gli agenti dalla repo
-
-> Limitazione: le sessioni web si chiudono dopo un periodo di inattività. Per progetti lunghi con tanta KB da costruire, il terminale è più stabile.
+> Limitazione: le sessioni web si chiudono per inattività. Per progetti lunghi usa il terminale.
 
 ---
 
-## Come si usa
+## 💰 Modelli e costi
 
-Non serve sintassi speciale. Descrivi il task in linguaggio naturale e Claude dispaccia automaticamente l'agente giusto leggendo le `description` in `.claude/agents/`.
+| Agenti | Modello | Motivo |
+|---|---|---|
+| `qa-tester` · `qa-security-guard` · `kb-librarian` · `biz-customer-support-specialist` · `prog-*` | **Haiku** *(economico)* | Compiti ripetitivi/checklist |
+| Tutti gli altri (director, orchestratori, designer, writer) | **Sonnet** | Giudizio creativo e orchestrazione |
 
-**Esempi:**
-
-```
-"Crea il world design del continente principale"
-→ dispatcha design-world-designer
-
-"Scrivi il dialogo di apertura tra il protagonista e il villain"
-→ dispatcha narr-dialogue-writer
-
-"Valida la coerenza tra il lore e le quest create oggi"
-→ dispatcha qa-cross-domain
-
-"Approva gli asset in pending"
-→ dispatcha dir-game-director (batch approval)
-```
-
-**Per forzare un agente specifico:**
-
-```
-"Usa l'agente design-quest-designer per progettare la quest del villaggio abbandonato"
-```
-
-**Per task multi-agente (consigliato: chiama l'orchestratore):**
-
-```
-"Chiedi a dir-lead-game-designer di coordinare world design e narrative per la prima area"
-```
-
-L'orchestratore gestisce in autonomia il dispatch agli specialist e la raccolta degli output.
+Cambia modello modificando il campo `model` in qualsiasi `.claude/agents/<slug>.md`.
 
 ---
 
-## Knowledge Base
-
-Tutti i contenuti prodotti vengono salvati in `knowledge_base/` in formato Markdown strutturato:
-
-```
-knowledge_base/
-├── world/          characters/     factions/       regions/        timeline/
-├── narrative/      dialogue/       lore/
-├── quests/         systems/        levels/
-├── art_direction/  assets_visual/  assets_audio/
-├── production/     marketing/      live_ops/
-├── qa_reports/     staging/        i18n/
-└── INDEX.md        (aggiornato automaticamente da kb-librarian)
-```
-
-Ogni agente legge **solo** le cartelle di sua competenza (`can_modify` + `reads_from` nel proprio file). Nessuno carica l'intera KB.
-
----
-
-## Modalità operativa
+## 🗄️ Modalità operativa
 
 Configurabile in `knowledge_base/production/config.md`:
 
-| Mode | Comportamento |
+| Modalità | Comportamento |
 |---|---|
-| `PROD` *(default)* | Scrittura diretta nella KB |
+| `PROD` *(default)* | Scrittura diretta nella Knowledge Base |
 | `DRY-RUN` | Output in `knowledge_base/staging/` — KB ufficiale intatta |
 
 ---
 
-## Costi
-
-| Agente | Modello | Perché |
-|---|---|---|
-| `qa-tester`, `qa-security-guard`, `kb-librarian`, `biz-customer-support-specialist`, `prog-*` | **Haiku** | Compiti ripetitivi/checklist, nessun giudizio creativo |
-| Tutti gli altri | **Sonnet** | Giudizio creativo, orchestrazione, scrittura |
-
-Puoi cambiare il modello di qualsiasi agente modificando il campo `model` nel suo file `.claude/agents/<slug>.md`.
-
----
-
-## File chiave
+## 📁 File chiave
 
 | File | Ruolo |
 |---|---|
-| `CLAUDE.md` | Costituzione del progetto — sempre in context, regole assolute |
+| `CLAUDE.md` | Costituzione del progetto — sempre in context |
 | `.claude/RULES_BASE.md` | Regole universali ereditate da tutti gli agenti |
-| `roles.json` | Sorgente di verità degli agenti (can_modify, reads_from, model) |
-| `scripts/generate_agents.py` | Rigenera i file agente da roles.json |
-| `knowledge_base/INDEX.md` | Indice navigabile della KB |
-| `knowledge_base/production/session_manifest.md` | Checkpointing sessione — il Director lo legge all'avvio |
+| `roles.json` | Sorgente di verità: can_modify, reads_from, model per ogni agente |
+| `scripts/generate_agents.py` | Rigenera i file agente da `roles.json` |
+| `knowledge_base/INDEX.md` | Indice navigabile della KB (auto-aggiornato da kb-librarian) |
+| `knowledge_base/production/session_manifest.md` | Checkpointing — il Director lo legge all'avvio |
 | `knowledge_base/production/pending_approval.md` | Coda batch approval per il Director |
-| `logs/TRANSACTION_LOG.md` | Log unificato di tutte le modifiche alla KB |
+| `logs/TRANSACTION_LOG.md` | Log unificato di tutte le modifiche |
+
+---
+
+## ❓ Claude Desktop è supportato?
+
+No. Gli agenti in `.claude/agents/` richiedono Claude Code (terminale/IDE) perché usano il **Task tool** per leggere e scrivere file nella Knowledge Base. Claude Desktop non supporta questo sistema. Per questo motivo la guida consiglia esclusivamente Claude Code da terminale o IDE.
