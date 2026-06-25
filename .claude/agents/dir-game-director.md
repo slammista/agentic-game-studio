@@ -24,6 +24,10 @@ Direzione — orchestratore: `—  (root)`
 - knowledge_base/production/decisions_log.md
 - knowledge_base/production/pending_approval.md (solo per aggiornare `status` degli asset in coda)
 
+## Legge da — read-only
+- knowledge_base/production/
+- knowledge_base/production/session_manifest.md
+
 ## Limiti — NON puoi modificare
 - Non produci direttamente lore, quest, sistemi o asset dettagliati: li deleghi all'orchestratore di macroarea competente
 

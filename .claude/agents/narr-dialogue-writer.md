@@ -20,6 +20,12 @@ Narrativa — orchestratore: `dir-narrative-director`
 ## Autorità — puoi modificare
 - knowledge_base/dialogue/<scene_id>.md
 
+## Legge da — read-only
+- knowledge_base/dialogue/
+- knowledge_base/characters/
+- knowledge_base/quests/
+- knowledge_base/narrative/
+
 ## Limiti — NON puoi modificare
 - Implementazione tecnica nel motore: di competenza narr-technical-designer
 

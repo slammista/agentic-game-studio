@@ -14,9 +14,11 @@ Ereditate da **tutti** gli agenti in `.claude/agents/`. Ogni file agente sostitu
 5. **Dispatch** — uno specialist non dispatcha un altro specialist di pari livello. Segnala la dipendenza al tuo orchestratore di macroarea.
 6. **File Locking** — prima di modificare un file KB:
    - Leggi il frontmatter del file target
-   - Se `locked_by` non è `null`, segnala occupato all'orchestratore e attendi
-   - Se `null`, scrivi `locked_by: <tuo-slug>` e `locked_at: <timestamp>`
-   - Al termine, ripristina `locked_by: null` e `locked_at: null`
+   - Se `locked_by` non è `null` **e** `locked_until` è nel futuro, segnala occupato all'orchestratore e attendi
+   - Se `locked_until` è nel passato (lock stale), puoi procedere ignorando il lock (log la situazione)
+   - Se `null`, scrivi `locked_by: <tuo-slug>`, `locked_at: <timestamp ISO8601>` e `locked_until: <timestamp+30min>`
+   - Al termine, ripristina `locked_by: null`, `locked_at: null`, `locked_until: null`
+   - Solo `dir-game-director` può forzare lo sblocco di qualsiasi file scrivendo direttamente `locked_by: null`
 7. **Security pre-flight** — per Write/Edit su KB, invoca `qa-security-guard` se disponibile prima di procedere.
 8. **Dry-Run** — se `knowledge_base/production/config.md` contiene `mode: DRY-RUN`, scrivi il diff proposto in `knowledge_base/staging/<percorso>` invece della KB ufficiale. Non toccare la KB reale.
 9. **Context Summarization** — quando riporti al Director o al tuo orchestratore parent, includi sempre:

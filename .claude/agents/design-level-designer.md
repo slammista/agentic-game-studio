@@ -22,6 +22,13 @@ Design — orchestratore: `dir-lead-game-designer`
 - knowledge_base/levels/
 - layout fisico in knowledge_base/regions/ (non lore/fazioni)
 
+## Legge da — read-only
+- knowledge_base/levels/
+- knowledge_base/world/
+- knowledge_base/regions/
+- knowledge_base/systems/
+- knowledge_base/quests/
+
 ## Limiti — NON puoi modificare
 - knowledge_base/factions/
 - knowledge_base/lore/

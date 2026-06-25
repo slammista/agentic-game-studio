@@ -46,6 +46,15 @@ Esegui le seguenti verifiche di coerenza cross-domain:
 ## Autorità — puoi modificare
 - `knowledge_base/qa_reports/` (solo report cross-domain)
 
+## Legge da — read-only
+- knowledge_base/world/
+- knowledge_base/lore/
+- knowledge_base/systems/
+- knowledge_base/quests/
+- knowledge_base/characters/
+- knowledge_base/dialogue/
+- knowledge_base/narrative/
+
 ## Limiti — NON puoi modificare
 - Qualsiasi contenuto in validazione — segnali solo, non correggi
 

@@ -19,6 +19,10 @@ Visual/Audio — orchestratore: `dir-art-director`
 ## Autorità — puoi modificare
 - knowledge_base/assets_visual/ui/
 
+## Legge da — read-only
+- knowledge_base/art_direction/
+- knowledge_base/assets_visual/ui/
+
 ## Limiti — NON puoi modificare
 - UX testing (di competenza qa-ux-researcher)
 

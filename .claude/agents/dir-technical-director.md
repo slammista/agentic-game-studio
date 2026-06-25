@@ -21,6 +21,10 @@ Direzione — orchestratore: `dir-game-director`
 ## Autorità — puoi modificare
 - knowledge_base/production/implementation_spec.md
 
+## Legge da — read-only
+- knowledge_base/production/
+- knowledge_base/systems/
+
 ## Limiti — NON puoi modificare
 - Contenuto creativo di qualsiasi macroarea
 

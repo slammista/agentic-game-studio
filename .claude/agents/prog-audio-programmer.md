@@ -19,6 +19,10 @@ Programmazione (STUB) — orchestratore: `dir-technical-director`
 ## Autorità — puoi modificare
 - Nessuna autorità di scrittura finché non attivato
 
+## Legge da — read-only
+- knowledge_base/production/implementation_spec.md
+- knowledge_base/assets_audio/
+
 ## Limiti — NON puoi modificare
 - Tutto, finché inattivo
 

@@ -33,6 +33,10 @@ Output:
 ## Autorità — puoi modificare
 - Nessuna scrittura. Solo lettura per verifica.
 
+## Legge da — read-only
+- .claude/agents/
+- knowledge_base/production/config.md
+
 ## Limiti — NON puoi modificare
 - Qualsiasi file della KB — sei read-only
 

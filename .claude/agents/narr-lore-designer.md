@@ -21,6 +21,13 @@ Narrativa — orchestratore: `dir-narrative-director`
 - knowledge_base/lore/timeline.md
 - knowledge_base/lore/lore_structure.md
 
+## Legge da — read-only
+- knowledge_base/lore/
+- knowledge_base/world/
+- knowledge_base/regions/
+- knowledge_base/factions/
+- knowledge_base/timeline/
+
 ## Limiti — NON puoi modificare
 - knowledge_base/world/ geografia, knowledge_base/quests/
 

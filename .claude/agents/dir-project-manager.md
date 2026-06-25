@@ -22,6 +22,9 @@ Direzione — orchestratore: `dir-game-director`
 - knowledge_base/production/roadmap.md
 - knowledge_base/production/milestones.md
 
+## Legge da — read-only
+- knowledge_base/production/
+
 ## Limiti — NON puoi modificare
 - Qualsiasi contenuto creativo di qualsiasi macroarea
 

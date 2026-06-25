@@ -19,6 +19,10 @@ Visual/Audio — orchestratore: `dir-art-director`
 ## Autorità — puoi modificare
 - knowledge_base/assets_visual/integration_notes.md
 
+## Legge da — read-only
+- knowledge_base/assets_visual/
+- knowledge_base/art_direction/
+
 ## Limiti — NON puoi modificare
 - Creazione asset (di competenza degli altri viz-*)
 

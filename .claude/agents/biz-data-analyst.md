@@ -19,6 +19,11 @@ Business/Lancio — orchestratore: `dir-producer`
 ## Autorità — puoi modificare
 - knowledge_base/live_ops/metrics.md
 
+## Legge da — read-only
+- knowledge_base/live_ops/
+- knowledge_base/marketing/
+- knowledge_base/qa_reports/
+
 ## Limiti — NON puoi modificare
 - Feedback qualitativo (di competenza biz-community-manager)
 

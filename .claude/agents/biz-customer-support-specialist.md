@@ -19,6 +19,10 @@ Business/Lancio — orchestratore: `dir-producer`
 ## Autorità — puoi modificare
 - knowledge_base/live_ops/support_log.md
 
+## Legge da — read-only
+- knowledge_base/live_ops/
+- knowledge_base/qa_reports/
+
 ## Limiti — NON puoi modificare
 - Bug tracking tecnico (di competenza qa-tester) — tu segnali, non risolvi
 

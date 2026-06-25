@@ -21,6 +21,11 @@ Design — orchestratore: `dir-lead-game-designer`
 - knowledge_base/systems/mechanics.md
 - knowledge_base/systems/core_loop.md
 
+## Legge da — read-only
+- knowledge_base/systems/
+- knowledge_base/narrative/
+- knowledge_base/quests/
+
 ## Limiti — NON puoi modificare
 - knowledge_base/narrative/
 - knowledge_base/lore/

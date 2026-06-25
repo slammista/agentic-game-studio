@@ -22,6 +22,11 @@ Business/Lancio — orchestratore: `dir-producer`
 - knowledge_base/marketing/community.md
 - knowledge_base/live_ops/feedback_log.md
 
+## Legge da — read-only
+- knowledge_base/marketing/
+- knowledge_base/live_ops/
+- knowledge_base/qa_reports/ux/
+
 ## Limiti — NON puoi modificare
 - Analisi KPI quantitativa (di competenza biz-data-analyst)
 

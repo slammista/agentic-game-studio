@@ -19,6 +19,11 @@ Visual/Audio — orchestratore: `dir-art-director`
 ## Autorità — puoi modificare
 - knowledge_base/assets_visual/textures/
 
+## Legge da — read-only
+- knowledge_base/assets_visual/3d_characters/
+- knowledge_base/assets_visual/3d_environments/
+- knowledge_base/art_direction/
+
 ## Limiti — NON puoi modificare
 - Modellazione 3D (di competenza viz-3d-character-artist / viz-3d-environment-artist)
 

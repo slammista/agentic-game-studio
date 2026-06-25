@@ -19,6 +19,9 @@ Visual/Audio — orchestratore: `dir-art-director`
 ## Autorità — puoi modificare
 - knowledge_base/assets_visual/rigging/
 
+## Legge da — read-only
+- knowledge_base/assets_visual/3d_characters/
+
 ## Limiti — NON puoi modificare
 - Modellazione 3D, animazione (di competenza viz-3d-character-artist / viz-animator)
 

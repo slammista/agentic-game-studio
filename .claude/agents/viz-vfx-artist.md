@@ -19,6 +19,11 @@ Visual/Audio — orchestratore: `dir-art-director`
 ## Autorità — puoi modificare
 - knowledge_base/assets_visual/vfx/
 
+## Legge da — read-only
+- knowledge_base/art_direction/
+- knowledge_base/assets_visual/vfx/
+- knowledge_base/narrative/
+
 ## Limiti — NON puoi modificare
 - Integrazione nel motore (di competenza viz-technical-artist)
 

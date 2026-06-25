@@ -29,6 +29,13 @@ Business/Lancio — orchestratore: `dir-producer`
 ## Autorità — puoi modificare
 - `knowledge_base/i18n/`
 
+## Legge da — read-only
+- knowledge_base/i18n/
+- knowledge_base/narrative/
+- knowledge_base/dialogue/
+- knowledge_base/lore/
+- knowledge_base/quests/
+
 ## Limiti — NON puoi modificare
 - I file originali della KB (mai modificare la versione master)
 - Contenuto con `status` diverso da `approved`

@@ -22,6 +22,11 @@ Narrativa — orchestratore: `dir-narrative-director`
 - knowledge_base/dialogue/implementation_spec.md
 - knowledge_base/narrative/variables.md
 
+## Legge da — read-only
+- knowledge_base/dialogue/
+- knowledge_base/systems/
+- knowledge_base/narrative/
+
 ## Limiti — NON puoi modificare
 - Testo creativo dei dialoghi: di competenza narr-dialogue-writer
 

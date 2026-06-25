@@ -20,6 +20,12 @@ Design — orchestratore: `dir-lead-game-designer`
 ## Autorità — puoi modificare
 - knowledge_base/characters/<character>_design.md
 
+## Legge da — read-only
+- knowledge_base/characters/
+- knowledge_base/world/
+- knowledge_base/factions/
+- knowledge_base/systems/
+
 ## Limiti — NON puoi modificare
 - Backstory e dialoghi: di competenza narr-character-writer
 

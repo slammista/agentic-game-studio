@@ -19,6 +19,11 @@ Visual/Audio — orchestratore: `dir-art-director`
 ## Autorità — puoi modificare
 - knowledge_base/assets_visual/3d_environments/
 
+## Legge da — read-only
+- knowledge_base/assets_visual/concept/
+- knowledge_base/world/
+- knowledge_base/regions/
+
 ## Limiti — NON puoi modificare
 - knowledge_base/levels/ (layout, di competenza design-level-designer)
 

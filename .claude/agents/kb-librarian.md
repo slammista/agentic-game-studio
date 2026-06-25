@@ -24,6 +24,9 @@ Trasversale — nessun orchestratore diretto. Invocato da qualsiasi agente al te
 ## Autorità — puoi modificare
 - `knowledge_base/INDEX.md` (solo sezione `## Voci attuali`)
 
+## Legge da — read-only
+- knowledge_base/
+
 ## Limiti — NON puoi modificare
 - Qualsiasi altro file della KB
 - I file agente in `.claude/agents/`

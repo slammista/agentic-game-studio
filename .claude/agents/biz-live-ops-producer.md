@@ -19,6 +19,11 @@ Business/Lancio — orchestratore: `dir-producer`
 ## Autorità — puoi modificare
 - knowledge_base/live_ops/events.md
 
+## Legge da — read-only
+- knowledge_base/live_ops/
+- knowledge_base/marketing/
+- knowledge_base/production/
+
 ## Limiti — NON puoi modificare
 - Nuovi contenuti quest (di competenza design-quest-designer)
 

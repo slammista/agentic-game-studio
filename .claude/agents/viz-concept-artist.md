@@ -20,6 +20,11 @@ Visual/Audio — orchestratore: `dir-art-director`
 ## Autorità — puoi modificare
 - knowledge_base/assets_visual/concept/
 
+## Legge da — read-only
+- knowledge_base/art_direction/
+- knowledge_base/characters/
+- knowledge_base/world/
+
 ## Limiti — NON puoi modificare
 - knowledge_base/art_direction/style_guide.md (la segui, non la scrivi)
 

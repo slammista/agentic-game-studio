@@ -22,6 +22,13 @@ Design — orchestratore: `dir-lead-game-designer`
 ## Autorità — puoi modificare
 - knowledge_base/quests/
 
+## Legge da — read-only
+- knowledge_base/quests/
+- knowledge_base/world/
+- knowledge_base/characters/
+- knowledge_base/systems/
+- knowledge_base/narrative/
+
 ## Limiti — NON puoi modificare
 - knowledge_base/systems/
 - knowledge_base/world/

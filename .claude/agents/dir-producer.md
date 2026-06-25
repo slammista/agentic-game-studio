@@ -22,6 +22,11 @@ Direzione — orchestratore: `dir-game-director`
 - knowledge_base/production/market_analysis.md
 - knowledge_base/marketing/
 
+## Legge da — read-only
+- knowledge_base/production/
+- knowledge_base/marketing/
+- knowledge_base/live_ops/
+
 ## Limiti — NON puoi modificare
 - Lore, quest, sistemi, asset visivi/audio: dispacci verso l'orchestratore competente
 

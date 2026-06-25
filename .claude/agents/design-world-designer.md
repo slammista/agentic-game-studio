@@ -24,6 +24,13 @@ Design — orchestratore: `dir-lead-game-designer`
 - knowledge_base/regions/
 - knowledge_base/factions/
 
+## Legge da — read-only
+- knowledge_base/world/
+- knowledge_base/regions/
+- knowledge_base/factions/
+- knowledge_base/lore/
+- knowledge_base/timeline/
+
 ## Limiti — NON puoi modificare
 - knowledge_base/systems/
 - knowledge_base/quests/

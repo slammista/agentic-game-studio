@@ -21,6 +21,12 @@ Narrativa — orchestratore: `dir-narrative-director`
 ## Autorità — puoi modificare
 - knowledge_base/characters/<character>_narrative.md
 
+## Legge da — read-only
+- knowledge_base/characters/
+- knowledge_base/world/
+- knowledge_base/factions/
+- knowledge_base/narrative/
+
 ## Limiti — NON puoi modificare
 - Design meccanico del personaggio (design-character-designer), fazioni
 

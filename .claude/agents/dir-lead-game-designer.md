@@ -22,6 +22,14 @@ Direzione — orchestratore: `dir-game-director`
 - knowledge_base/production/gdd.md
 - review su knowledge_base/systems/, knowledge_base/quests/, knowledge_base/levels/
 
+## Legge da — read-only
+- knowledge_base/quests/
+- knowledge_base/world/
+- knowledge_base/systems/
+- knowledge_base/levels/
+- knowledge_base/characters/
+- knowledge_base/narrative/
+
 ## Limiti — NON puoi modificare
 - Lore, narrativa, asset visivi/audio
 

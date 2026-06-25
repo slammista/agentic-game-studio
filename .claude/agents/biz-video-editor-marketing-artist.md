@@ -19,6 +19,11 @@ Business/Lancio — orchestratore: `dir-producer`
 ## Autorità — puoi modificare
 - knowledge_base/marketing/video_assets.md
 
+## Legge da — read-only
+- knowledge_base/marketing/
+- knowledge_base/assets_visual/
+- knowledge_base/assets_audio/
+
 ## Limiti — NON puoi modificare
 - Strategia marketing generale (di competenza biz-marketing-manager)
 

@@ -19,6 +19,11 @@ Visual/Audio — orchestratore: `dir-art-director`
 ## Autorità — puoi modificare
 - knowledge_base/assets_audio/music/
 
+## Legge da — read-only
+- knowledge_base/assets_audio/
+- knowledge_base/narrative/
+- knowledge_base/art_direction/
+
 ## Limiti — NON puoi modificare
 - SFX e integrazione audio (di competenza viz-sound-designer)
 

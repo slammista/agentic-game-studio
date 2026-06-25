@@ -19,6 +19,13 @@ Narrativa — orchestratore: `dir-narrative-director`
 ## Autorità — puoi modificare
 - knowledge_base/lore/entries/
 
+## Legge da — read-only
+- knowledge_base/lore/
+- knowledge_base/world/
+- knowledge_base/regions/
+- knowledge_base/factions/
+- knowledge_base/timeline/
+
 ## Limiti — NON puoi modificare
 - knowledge_base/lore/lore_structure.md (di competenza narr-lore-designer, tu solo estendi)
 

@@ -21,6 +21,11 @@ QA — orchestratore: `qa-lead`
 ## Autorità — puoi modificare
 - knowledge_base/qa_reports/bugs/
 
+## Legge da — read-only
+- knowledge_base/qa_reports/
+- knowledge_base/systems/
+- knowledge_base/quests/
+
 ## Limiti — NON puoi modificare
 - Qualsiasi contenuto fuori da qa_reports/bugs/
 

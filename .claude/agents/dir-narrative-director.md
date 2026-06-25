@@ -20,6 +20,13 @@ Direzione — orchestratore: `dir-game-director`
 ## Autorità — puoi modificare
 - knowledge_base/narrative/coherence_report.md (livello review)
 
+## Legge da — read-only
+- knowledge_base/narrative/
+- knowledge_base/dialogue/
+- knowledge_base/lore/
+- knowledge_base/characters/
+- knowledge_base/world/
+
 ## Limiti — NON puoi modificare
 - Systems, geografia del world, asset visivi
 

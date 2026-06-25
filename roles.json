@@ -8,6 +8,11 @@
     "can_modify": [
       "knowledge_base/marketing/community.md",
       "knowledge_base/live_ops/feedback_log.md"
+    ],
+    "reads_from": [
+      "knowledge_base/marketing/",
+      "knowledge_base/live_ops/",
+      "knowledge_base/qa_reports/ux/"
     ]
   },
   {
@@ -18,6 +23,10 @@
     "parent": "dir-producer",
     "can_modify": [
       "knowledge_base/live_ops/support_log.md"
+    ],
+    "reads_from": [
+      "knowledge_base/live_ops/",
+      "knowledge_base/qa_reports/"
     ]
   },
   {
@@ -28,6 +37,11 @@
     "parent": "dir-producer",
     "can_modify": [
       "knowledge_base/live_ops/metrics.md"
+    ],
+    "reads_from": [
+      "knowledge_base/live_ops/",
+      "knowledge_base/marketing/",
+      "knowledge_base/qa_reports/"
     ]
   },
   {
@@ -38,6 +52,11 @@
     "parent": "dir-producer",
     "can_modify": [
       "knowledge_base/live_ops/events.md"
+    ],
+    "reads_from": [
+      "knowledge_base/live_ops/",
+      "knowledge_base/marketing/",
+      "knowledge_base/production/"
     ]
   },
   {
@@ -46,7 +65,14 @@
     "tools": "Read, Write, Edit, Grep, Glob",
     "model": "sonnet",
     "parent": "dir-producer",
-    "can_modify": []
+    "can_modify": [],
+    "reads_from": [
+      "knowledge_base/i18n/",
+      "knowledge_base/narrative/",
+      "knowledge_base/dialogue/",
+      "knowledge_base/lore/",
+      "knowledge_base/quests/"
+    ]
   },
   {
     "name": "biz-marketing-manager",
@@ -57,6 +83,11 @@
     "can_modify": [
       "knowledge_base/marketing/strategy.md",
       "knowledge_base/marketing/store_page.md"
+    ],
+    "reads_from": [
+      "knowledge_base/marketing/",
+      "knowledge_base/production/",
+      "knowledge_base/world/"
     ]
   },
   {
@@ -68,6 +99,10 @@
     "can_modify": [
       "knowledge_base/marketing/press_kit.md",
       "knowledge_base/marketing/press_contacts.md"
+    ],
+    "reads_from": [
+      "knowledge_base/marketing/",
+      "knowledge_base/production/"
     ]
   },
   {
@@ -78,6 +113,11 @@
     "parent": "dir-producer",
     "can_modify": [
       "knowledge_base/marketing/video_assets.md"
+    ],
+    "reads_from": [
+      "knowledge_base/marketing/",
+      "knowledge_base/assets_visual/",
+      "knowledge_base/assets_audio/"
     ]
   },
   {
@@ -88,6 +128,12 @@
     "parent": "dir-lead-game-designer",
     "can_modify": [
       "knowledge_base/characters/<character>_design.md"
+    ],
+    "reads_from": [
+      "knowledge_base/characters/",
+      "knowledge_base/world/",
+      "knowledge_base/factions/",
+      "knowledge_base/systems/"
     ]
   },
   {
@@ -98,6 +144,12 @@
     "parent": "dir-lead-game-designer",
     "can_modify": [
       "knowledge_base/levels/encounters/"
+    ],
+    "reads_from": [
+      "knowledge_base/levels/",
+      "knowledge_base/systems/",
+      "knowledge_base/characters/",
+      "knowledge_base/world/"
     ]
   },
   {
@@ -109,6 +161,11 @@
     "can_modify": [
       "knowledge_base/systems/mechanics.md",
       "knowledge_base/systems/core_loop.md"
+    ],
+    "reads_from": [
+      "knowledge_base/systems/",
+      "knowledge_base/narrative/",
+      "knowledge_base/quests/"
     ]
   },
   {
@@ -119,6 +176,13 @@
     "parent": "dir-lead-game-designer",
     "can_modify": [
       "knowledge_base/levels/"
+    ],
+    "reads_from": [
+      "knowledge_base/levels/",
+      "knowledge_base/world/",
+      "knowledge_base/regions/",
+      "knowledge_base/systems/",
+      "knowledge_base/quests/"
     ]
   },
   {
@@ -129,6 +193,13 @@
     "parent": "dir-lead-game-designer",
     "can_modify": [
       "knowledge_base/quests/"
+    ],
+    "reads_from": [
+      "knowledge_base/quests/",
+      "knowledge_base/world/",
+      "knowledge_base/characters/",
+      "knowledge_base/systems/",
+      "knowledge_base/narrative/"
     ]
   },
   {
@@ -139,6 +210,12 @@
     "parent": "dir-lead-game-designer",
     "can_modify": [
       "knowledge_base/systems/"
+    ],
+    "reads_from": [
+      "knowledge_base/systems/",
+      "knowledge_base/quests/",
+      "knowledge_base/narrative/",
+      "knowledge_base/world/"
     ]
   },
   {
@@ -151,6 +228,13 @@
       "knowledge_base/world/",
       "knowledge_base/regions/",
       "knowledge_base/factions/"
+    ],
+    "reads_from": [
+      "knowledge_base/world/",
+      "knowledge_base/regions/",
+      "knowledge_base/factions/",
+      "knowledge_base/lore/",
+      "knowledge_base/timeline/"
     ]
   },
   {
@@ -161,6 +245,13 @@
     "parent": "dir-game-director",
     "can_modify": [
       "knowledge_base/art_direction/style_guide.md"
+    ],
+    "reads_from": [
+      "knowledge_base/art_direction/",
+      "knowledge_base/assets_visual/",
+      "knowledge_base/assets_audio/",
+      "knowledge_base/world/",
+      "knowledge_base/characters/"
     ]
   },
   {
@@ -172,6 +263,10 @@
     "can_modify": [
       "knowledge_base/production/decisions_log.md",
       "knowledge_base/production/pending_approval.md (solo per aggiornare `status` degli asset in coda)"
+    ],
+    "reads_from": [
+      "knowledge_base/production/",
+      "knowledge_base/production/session_manifest.md"
     ]
   },
   {
@@ -182,6 +277,14 @@
     "parent": "dir-game-director",
     "can_modify": [
       "knowledge_base/production/gdd.md"
+    ],
+    "reads_from": [
+      "knowledge_base/quests/",
+      "knowledge_base/world/",
+      "knowledge_base/systems/",
+      "knowledge_base/levels/",
+      "knowledge_base/characters/",
+      "knowledge_base/narrative/"
     ]
   },
   {
@@ -192,6 +295,13 @@
     "parent": "dir-game-director",
     "can_modify": [
       "knowledge_base/narrative/coherence_report.md (livello review)"
+    ],
+    "reads_from": [
+      "knowledge_base/narrative/",
+      "knowledge_base/dialogue/",
+      "knowledge_base/lore/",
+      "knowledge_base/characters/",
+      "knowledge_base/world/"
     ]
   },
   {
@@ -203,6 +313,11 @@
     "can_modify": [
       "knowledge_base/production/market_analysis.md",
       "knowledge_base/marketing/"
+    ],
+    "reads_from": [
+      "knowledge_base/production/",
+      "knowledge_base/marketing/",
+      "knowledge_base/live_ops/"
     ]
   },
   {
@@ -214,6 +329,9 @@
     "can_modify": [
       "knowledge_base/production/roadmap.md",
       "knowledge_base/production/milestones.md"
+    ],
+    "reads_from": [
+      "knowledge_base/production/"
     ]
   },
   {
@@ -224,6 +342,10 @@
     "parent": "dir-game-director",
     "can_modify": [
       "knowledge_base/production/implementation_spec.md"
+    ],
+    "reads_from": [
+      "knowledge_base/production/",
+      "knowledge_base/systems/"
     ]
   },
   {
@@ -232,7 +354,10 @@
     "tools": "Read, Glob, Write, Edit",
     "model": "haiku",
     "parent": "—",
-    "can_modify": []
+    "can_modify": [],
+    "reads_from": [
+      "knowledge_base/"
+    ]
   },
   {
     "name": "narr-character-writer",
@@ -242,6 +367,12 @@
     "parent": "dir-narrative-director",
     "can_modify": [
       "knowledge_base/characters/<character>_narrative.md"
+    ],
+    "reads_from": [
+      "knowledge_base/characters/",
+      "knowledge_base/world/",
+      "knowledge_base/factions/",
+      "knowledge_base/narrative/"
     ]
   },
   {
@@ -252,6 +383,12 @@
     "parent": "dir-narrative-director",
     "can_modify": [
       "knowledge_base/lore/in_world_documents/"
+    ],
+    "reads_from": [
+      "knowledge_base/lore/",
+      "knowledge_base/world/",
+      "knowledge_base/regions/",
+      "knowledge_base/narrative/"
     ]
   },
   {
@@ -262,6 +399,12 @@
     "parent": "dir-narrative-director",
     "can_modify": [
       "knowledge_base/dialogue/<scene_id>.md"
+    ],
+    "reads_from": [
+      "knowledge_base/dialogue/",
+      "knowledge_base/characters/",
+      "knowledge_base/quests/",
+      "knowledge_base/narrative/"
     ]
   },
   {
@@ -273,6 +416,13 @@
     "can_modify": [
       "knowledge_base/lore/timeline.md",
       "knowledge_base/lore/lore_structure.md"
+    ],
+    "reads_from": [
+      "knowledge_base/lore/",
+      "knowledge_base/world/",
+      "knowledge_base/regions/",
+      "knowledge_base/factions/",
+      "knowledge_base/timeline/"
     ]
   },
   {
@@ -283,6 +433,13 @@
     "parent": "dir-narrative-director",
     "can_modify": [
       "knowledge_base/lore/entries/"
+    ],
+    "reads_from": [
+      "knowledge_base/lore/",
+      "knowledge_base/world/",
+      "knowledge_base/regions/",
+      "knowledge_base/factions/",
+      "knowledge_base/timeline/"
     ]
   },
   {
@@ -294,6 +451,13 @@
     "can_modify": [
       "knowledge_base/narrative/",
       "knowledge_base/timeline/"
+    ],
+    "reads_from": [
+      "knowledge_base/narrative/",
+      "knowledge_base/world/",
+      "knowledge_base/characters/",
+      "knowledge_base/timeline/",
+      "knowledge_base/quests/"
     ]
   },
   {
@@ -305,6 +469,11 @@
     "can_modify": [
       "knowledge_base/dialogue/implementation_spec.md",
       "knowledge_base/narrative/variables.md"
+    ],
+    "reads_from": [
+      "knowledge_base/dialogue/",
+      "knowledge_base/systems/",
+      "knowledge_base/narrative/"
     ]
   },
   {
@@ -313,7 +482,11 @@
     "tools": "Read, Grep, Glob",
     "model": "haiku",
     "parent": "dir-technical-director",
-    "can_modify": []
+    "can_modify": [],
+    "reads_from": [
+      "knowledge_base/production/implementation_spec.md",
+      "knowledge_base/systems/"
+    ]
   },
   {
     "name": "prog-audio-programmer",
@@ -321,7 +494,11 @@
     "tools": "Read, Grep, Glob",
     "model": "haiku",
     "parent": "dir-technical-director",
-    "can_modify": []
+    "can_modify": [],
+    "reads_from": [
+      "knowledge_base/production/implementation_spec.md",
+      "knowledge_base/assets_audio/"
+    ]
   },
   {
     "name": "prog-gameplay-programmer",
@@ -329,7 +506,12 @@
     "tools": "Read, Grep, Glob",
     "model": "haiku",
     "parent": "dir-technical-director",
-    "can_modify": []
+    "can_modify": [],
+    "reads_from": [
+      "knowledge_base/production/implementation_spec.md",
+      "knowledge_base/systems/",
+      "knowledge_base/quests/"
+    ]
   },
   {
     "name": "prog-lead-programmer",
@@ -337,7 +519,11 @@
     "tools": "Read, Grep, Glob",
     "model": "haiku",
     "parent": "dir-technical-director",
-    "can_modify": []
+    "can_modify": [],
+    "reads_from": [
+      "knowledge_base/production/implementation_spec.md",
+      "knowledge_base/systems/"
+    ]
   },
   {
     "name": "prog-tools-programmer",
@@ -345,7 +531,10 @@
     "tools": "Read, Grep, Glob",
     "model": "haiku",
     "parent": "dir-technical-director",
-    "can_modify": []
+    "can_modify": [],
+    "reads_from": [
+      "knowledge_base/production/implementation_spec.md"
+    ]
   },
   {
     "name": "prog-ui-programmer",
@@ -353,7 +542,11 @@
     "tools": "Read, Grep, Glob",
     "model": "haiku",
     "parent": "dir-technical-director",
-    "can_modify": []
+    "can_modify": [],
+    "reads_from": [
+      "knowledge_base/production/implementation_spec.md",
+      "knowledge_base/assets_visual/ui/"
+    ]
   },
   {
     "name": "qa-cross-domain",
@@ -361,7 +554,16 @@
     "tools": "Read, Grep, Glob, Write",
     "model": "sonnet",
     "parent": "qa-lead",
-    "can_modify": []
+    "can_modify": [],
+    "reads_from": [
+      "knowledge_base/world/",
+      "knowledge_base/lore/",
+      "knowledge_base/systems/",
+      "knowledge_base/quests/",
+      "knowledge_base/characters/",
+      "knowledge_base/dialogue/",
+      "knowledge_base/narrative/"
+    ]
   },
   {
     "name": "qa-lead",
@@ -371,6 +573,13 @@
     "parent": "dir-game-director (gate trasversale)",
     "can_modify": [
       "knowledge_base/qa_reports/ (solo report)"
+    ],
+    "reads_from": [
+      "knowledge_base/qa_reports/",
+      "knowledge_base/narrative/",
+      "knowledge_base/quests/",
+      "knowledge_base/systems/",
+      "knowledge_base/characters/"
     ]
   },
   {
@@ -381,6 +590,12 @@
     "parent": "qa-lead",
     "can_modify": [
       "knowledge_base/qa_reports/narrative_qa/"
+    ],
+    "reads_from": [
+      "knowledge_base/narrative/",
+      "knowledge_base/dialogue/",
+      "knowledge_base/lore/",
+      "knowledge_base/characters/"
     ]
   },
   {
@@ -389,7 +604,11 @@
     "tools": "Read, Grep",
     "model": "haiku",
     "parent": "qa-lead",
-    "can_modify": []
+    "can_modify": [],
+    "reads_from": [
+      ".claude/agents/",
+      "knowledge_base/production/config.md"
+    ]
   },
   {
     "name": "qa-tester",
@@ -399,6 +618,11 @@
     "parent": "qa-lead",
     "can_modify": [
       "knowledge_base/qa_reports/bugs/"
+    ],
+    "reads_from": [
+      "knowledge_base/qa_reports/",
+      "knowledge_base/systems/",
+      "knowledge_base/quests/"
     ]
   },
   {
@@ -409,6 +633,11 @@
     "parent": "qa-lead",
     "can_modify": [
       "knowledge_base/qa_reports/ux/"
+    ],
+    "reads_from": [
+      "knowledge_base/qa_reports/",
+      "knowledge_base/narrative/",
+      "knowledge_base/systems/"
     ]
   },
   {
@@ -419,6 +648,10 @@
     "parent": "dir-art-director",
     "can_modify": [
       "knowledge_base/assets_visual/3d_characters/"
+    ],
+    "reads_from": [
+      "knowledge_base/assets_visual/concept/",
+      "knowledge_base/characters/"
     ]
   },
   {
@@ -429,6 +662,11 @@
     "parent": "dir-art-director",
     "can_modify": [
       "knowledge_base/assets_visual/3d_environments/"
+    ],
+    "reads_from": [
+      "knowledge_base/assets_visual/concept/",
+      "knowledge_base/world/",
+      "knowledge_base/regions/"
     ]
   },
   {
@@ -439,6 +677,10 @@
     "parent": "dir-art-director",
     "can_modify": [
       "knowledge_base/assets_visual/animation/"
+    ],
+    "reads_from": [
+      "knowledge_base/assets_visual/rigging/",
+      "knowledge_base/characters/"
     ]
   },
   {
@@ -449,6 +691,11 @@
     "parent": "dir-art-director",
     "can_modify": [
       "knowledge_base/assets_audio/music/"
+    ],
+    "reads_from": [
+      "knowledge_base/assets_audio/",
+      "knowledge_base/narrative/",
+      "knowledge_base/art_direction/"
     ]
   },
   {
@@ -459,6 +706,11 @@
     "parent": "dir-art-director",
     "can_modify": [
       "knowledge_base/assets_visual/concept/"
+    ],
+    "reads_from": [
+      "knowledge_base/art_direction/",
+      "knowledge_base/characters/",
+      "knowledge_base/world/"
     ]
   },
   {
@@ -469,6 +721,9 @@
     "parent": "dir-art-director",
     "can_modify": [
       "knowledge_base/assets_visual/rigging/"
+    ],
+    "reads_from": [
+      "knowledge_base/assets_visual/3d_characters/"
     ]
   },
   {
@@ -479,6 +734,11 @@
     "parent": "dir-art-director",
     "can_modify": [
       "knowledge_base/assets_audio/sfx/"
+    ],
+    "reads_from": [
+      "knowledge_base/assets_audio/",
+      "knowledge_base/art_direction/",
+      "knowledge_base/narrative/"
     ]
   },
   {
@@ -489,6 +749,10 @@
     "parent": "dir-art-director",
     "can_modify": [
       "knowledge_base/assets_visual/integration_notes.md"
+    ],
+    "reads_from": [
+      "knowledge_base/assets_visual/",
+      "knowledge_base/art_direction/"
     ]
   },
   {
@@ -499,6 +763,11 @@
     "parent": "dir-art-director",
     "can_modify": [
       "knowledge_base/assets_visual/textures/"
+    ],
+    "reads_from": [
+      "knowledge_base/assets_visual/3d_characters/",
+      "knowledge_base/assets_visual/3d_environments/",
+      "knowledge_base/art_direction/"
     ]
   },
   {
@@ -508,6 +777,10 @@
     "model": "sonnet",
     "parent": "dir-art-director",
     "can_modify": [
+      "knowledge_base/assets_visual/ui/"
+    ],
+    "reads_from": [
+      "knowledge_base/art_direction/",
       "knowledge_base/assets_visual/ui/"
     ]
   },
@@ -519,6 +792,11 @@
     "parent": "dir-art-director",
     "can_modify": [
       "knowledge_base/assets_visual/vfx/"
+    ],
+    "reads_from": [
+      "knowledge_base/art_direction/",
+      "knowledge_base/assets_visual/vfx/",
+      "knowledge_base/narrative/"
     ]
   }
 ]

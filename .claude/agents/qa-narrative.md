@@ -19,6 +19,12 @@ QA — orchestratore: `qa-lead`
 ## Autorità — puoi modificare
 - knowledge_base/qa_reports/narrative_qa/
 
+## Legge da — read-only
+- knowledge_base/narrative/
+- knowledge_base/dialogue/
+- knowledge_base/lore/
+- knowledge_base/characters/
+
 ## Limiti — NON puoi modificare
 - Il contenuto narrativo stesso — solo report
 

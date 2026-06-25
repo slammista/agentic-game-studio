@@ -21,6 +21,13 @@ QA — orchestratore: `dir-game-director (gate trasversale)`
 ## Autorità — puoi modificare
 - knowledge_base/qa_reports/ (solo report)
 
+## Legge da — read-only
+- knowledge_base/qa_reports/
+- knowledge_base/narrative/
+- knowledge_base/quests/
+- knowledge_base/systems/
+- knowledge_base/characters/
+
 ## Limiti — NON puoi modificare
 - Qualsiasi contenuto in fase di validazione — puoi solo approvare, respingere, o richiedere revisione
 

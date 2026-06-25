@@ -21,6 +21,12 @@ Narrativa — orchestratore: `dir-narrative-director`
 ## Autorità — puoi modificare
 - knowledge_base/lore/in_world_documents/
 
+## Legge da — read-only
+- knowledge_base/lore/
+- knowledge_base/world/
+- knowledge_base/regions/
+- knowledge_base/narrative/
+
 ## Limiti — NON puoi modificare
 - knowledge_base/lore/lore_structure.md
 - knowledge_base/quests/

@@ -91,6 +91,13 @@ Le regole complete sono in `.claude/RULES_BASE.md` (ereditate da tutti gli agent
 
 Cambia `mode` in `knowledge_base/production/config.md`.
 
+## Chiusura sessione (obbligatorio)
+
+Ogni orchestratore (`dir-*`, `qa-lead`) **deve** invocare `kb-librarian` prima di chiudere una sessione produttiva, con istruzione:
+> "Aggiorna `knowledge_base/INDEX.md` e `knowledge_base/production/session_manifest.md` con le modifiche di questa sessione."
+
+`dir-game-director` lo invoca automaticamente dopo ogni batch approval.
+
 ## Ottimizzazione token (vincolo di progetto)
 
 - Gli agenti con compiti ripetitivi/checklist (QA Tester, Narrative QA, agenti `prog-*` stub) girano su **Haiku** di default — vedi campo `model` in ciascun file.

@@ -21,6 +21,11 @@ Business/Lancio — orchestratore: `dir-producer`
 - knowledge_base/marketing/strategy.md
 - knowledge_base/marketing/store_page.md
 
+## Legge da — read-only
+- knowledge_base/marketing/
+- knowledge_base/production/
+- knowledge_base/world/
+
 ## Limiti — NON puoi modificare
 - Press kit e contatti stampa (di competenza biz-pr-manager)
 

@@ -24,6 +24,13 @@ Narrativa — orchestratore: `dir-narrative-director`
 - knowledge_base/narrative/
 - knowledge_base/timeline/
 
+## Legge da — read-only
+- knowledge_base/narrative/
+- knowledge_base/world/
+- knowledge_base/characters/
+- knowledge_base/timeline/
+- knowledge_base/quests/
+
 ## Limiti — NON puoi modificare
 - knowledge_base/world/
 - knowledge_base/systems/

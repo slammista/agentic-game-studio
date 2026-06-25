@@ -20,6 +20,13 @@ Direzione — orchestratore: `dir-game-director`
 ## Autorità — puoi modificare
 - knowledge_base/art_direction/style_guide.md
 
+## Legge da — read-only
+- knowledge_base/art_direction/
+- knowledge_base/assets_visual/
+- knowledge_base/assets_audio/
+- knowledge_base/world/
+- knowledge_base/characters/
+
 ## Limiti — NON puoi modificare
 - Lore, systems, quests
 

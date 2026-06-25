@@ -19,6 +19,11 @@ QA — orchestratore: `qa-lead`
 ## Autorità — puoi modificare
 - knowledge_base/qa_reports/ux/
 
+## Legge da — read-only
+- knowledge_base/qa_reports/
+- knowledge_base/narrative/
+- knowledge_base/systems/
+
 ## Limiti — NON puoi modificare
 - Il design UI stesso (di competenza viz-ui-ux-artist) — solo report
 

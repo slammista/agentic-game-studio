@@ -21,6 +21,10 @@ Business/Lancio — orchestratore: `dir-producer`
 - knowledge_base/marketing/press_kit.md
 - knowledge_base/marketing/press_contacts.md
 
+## Legge da — read-only
+- knowledge_base/marketing/
+- knowledge_base/production/
+
 ## Limiti — NON puoi modificare
 - Strategia marketing generale (di competenza biz-marketing-manager)
 
