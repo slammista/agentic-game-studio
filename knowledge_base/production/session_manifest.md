@@ -16,27 +16,38 @@ description: Checkpointing di sessione. Aggiornato da kb-librarian al termine di
 
 ## Ultima sessione
 
-**Data:** 2026-06-25
-**Durata stimata:** —
-**Agenti attivati:** system (init)
+**Data:** 2026-08-23
+**Durata stimata:** breve — sessione di kickoff creativo
+**Agenti attivati:** dir-game-director, kb-librarian
 
 ### Asset prodotti
-*(nessuno — sessione di inizializzazione)*
+- `production/creative_vision.md` — visione creativa fondativa, **approved**
 
 ### Decisioni architetturali
-- Sistema multi-agente inizializzato con 53 agenti (49 originali + kb-librarian, qa-security-guard, qa-cross-domain, biz-localization-manager)
-- Transaction Log unificato attivato
-- Batch approval queue attivata
-- Dry-run mode disponibile (default: PROD)
+- **Progetto definito:** *Condominio Nove* — roguelike d'azione real-time top-down, registro weird/surreale domestico, lingua master `it`
+- **Scope stabilito:** vertical slice (piani 9→6 + Piano Meno Uno intravisto, 1 boss, 4 vicini firmatari, 3 archetipi nemico)
+- **Tre pilastri vincolanti:** (1) l'edificio si adatta al giocatore, (2) le Abitudini danno potere in cambio di prevedibilità, (3) il weird nasce solo dalla deformazione del quotidiano
+- **Progressione persistente:** solo le firme sul reclamo. Ogni altra persistenza richiede approvazione del Director
+- Macroarea `prog-*` confermata **STUB**: nessuna produzione di codice in questo scope
 
 ### Asset in pending approval
-*(nessuno)*
+*(nessuno — la visione creativa è autorità diretta del Director)*
 
 ### Conflitti aperti
 *(nessuno)*
 
+### Domande aperte
+1. Combattimento solo corpo a corpo o anche a distanza?
+2. Il boss del vertical slice è battibile alla prima notte o è sconfitta programmata?
+3. Le Abitudini hanno UI esplicita o vanno intuite?
+
 ### Context per prossima sessione
-Il progetto è alla fase di **setup iniziale**. Nessun contenuto narrativo, di design o visivo è stato ancora prodotto. Il passo successivo è definire la visione creativa del gioco con `dir-game-director`.
+La visione creativa è approvata ed è la radice della KB: ogni asset successivo deve
+esserle coerente. Il progetto entra in **fase di design**. Ordine di dipendenza
+consigliato: `design-game-designer` (core loop e combat) → `design-systems-designer`
+(Abitudini + Adattamento) → `design-world-designer` (il palazzo e i suoi inquilini)
+→ `narr-narrative-designer` (arco della prima notte). Le tre domande aperte vanno
+risolte prima o durante il passaggio da game designer a systems designer.
 
 ---
 
@@ -45,3 +56,4 @@ Il progetto è alla fase di **setup iniziale**. Nessun contenuto narrativo, di d
 | Data | Asset prodotti | Decisioni chiave | Agenti usati |
 |---|---|---|---|
 | 2026-06-25 | 0 | Init sistema | system |
+| 2026-08-23 | 1 | Kickoff *Condominio Nove*: genere, tono, tre pilastri, scope vertical slice | dir-game-director, kb-librarian |

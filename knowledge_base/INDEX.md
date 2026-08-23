@@ -30,4 +30,6 @@ Aggiorna questo file ogni volta che crei una nuova entità. Ogni agente legge SO
 
 ## Voci attuali
 
-_(vuoto — kb-librarian aggiorna questa sezione automaticamente. Formato: `| [nome](percorso) | agente | data | stato |`)_
+| Nome | Percorso | Agente | Data | Stato |
+|---|---|---|---|---|
+| Visione Creativa — Condominio Nove | [production/creative_vision.md](production/creative_vision.md) | dir-game-director | 2026-08-23 | approved |
