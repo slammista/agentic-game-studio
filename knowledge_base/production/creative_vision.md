@@ -4,143 +4,175 @@ date: 2026-08-23
 author: dir-game-director
 status: approved
 locked_by: null
+supersedes: "Visione creativa precedente (Condominio Nove, roguelike d'azione) — abbandonata su decisione del committente prima di qualsiasi asset dipendente."
 description: Visione creativa fondativa del progetto. Documento radice — ogni altro asset della KB deve essere coerente con questo file.
 ---
 
-# Visione Creativa — CONDOMINIO NOVE
+# Visione Creativa — PIETRAFITTA
 
 ## Identità del progetto
 
 | Campo | Valore |
 |---|---|
-| Titolo di lavorazione | **Condominio Nove** |
-| Genere | Roguelike d'azione, real-time, top-down |
-| Tono | Weird / surreale — burocrazia domestica che diventa organismo |
-| Prospettiva | Dall'alto, camera fissa per stanza |
-| Sessione tipo | 20–35 minuti per run |
-| Scope corrente | **Vertical slice** (vedi sezione dedicata) |
+| Titolo di lavorazione | **Pietrafitta** |
+| Genere | Mini-RPG investigativo / gioco di logica a casi episodici |
+| Tono | Giallo di provincia italiana, 1954. Realistico, umano, senza soprannaturale |
+| Prospettiva | 2D, vista laterale o isometrica leggera; esplorazione a luoghi discreti |
+| Sessione tipo | **Un caso = una giornata di gioco = 25–40 minuti** |
+| Scope corrente | **Vertical slice**: 3 casi collegati (vedi sezione dedicata) |
 | Lingua master | Italiano |
 
 ## Logline
 
-Ogni notte il tuo palazzo si riorganizza. Scendi al Piano Meno Uno per consegnare
-un reclamo all'Amministrazione — l'unico documento che può sciogliere il contratto
-che lega gli inquilini all'edificio. Non ci sei mai arrivato. L'edificio ti ha
-visto provare, e ha imparato.
+Sei il segretario comunale di Pietrafitta, ottocento anime sull'Appennino.
+Non sei un poliziotto: sei l'uomo che deve scrivere cosa è successo. Hai una
+giornata per capirlo, e alle diciotto la corriera porta il tuo verbale in
+Pretura. Quello che scrivi diventa la verità ufficiale — anche quando è
+sbagliata.
 
 ## I tre pilastri
 
-### Pilastro 1 — L'edificio è un avversario che ricorda
+### Pilastro 1 — Il verbale è la meccanica
 
-La progressione meta non è nelle mani del giocatore: è nell'edificio. Ogni run
-lascia una traccia. Il palazzo mura le scale che usi troppo, sposta l'ascensore
-lontano dalla tua rotta abituale, mette guardie dove hai vinto facile. Non è
-difficoltà crescente: è **difficoltà personalizzata**. Due giocatori diversi
-affrontano due palazzi diversi dopo dieci run.
+Il gioco non ti chiede di cliccare sul colpevole. Ti chiede di **compilare un
+documento**: un modulo prestampato con caselle vuote da riempire con nomi,
+oggetti, ore, moventi. `Il giorno __, alle ore __, __ ha __ ai danni di __,
+servendosi di __, perché __.`
 
-Conseguenza di design: nessuna build ottimale esiste a lungo. La soluzione che
-funziona smette di funzionare perché l'hai usata.
+Il verbale si verifica da solo: quando tre caselle contigue sono tutte corrette,
+si fissano con un timbro e non si toccano più. Il giocatore riceve conferma
+del progresso senza mai sapere *quale* singola casella fosse giusta. Questo
+rende impossibile la forza bruta e premia il ragionamento a gruppi — deduci un
+nesso intero, non una variabile isolata.
 
-### Pilastro 2 — Le Abitudini: potere che ti rende prevedibile
+Il legame tra finzione e sistema è totale: la deduzione non è una metafora del
+lavoro del protagonista, **è** il lavoro del protagonista.
 
-Ripetere un comportamento (stessa arma, stessa rotta, stesso stile di combat)
-accumula una **Abitudine**. Le Abitudini sono potenti — danno bonus concreti e
-crescenti. Ma ogni Abitudine è anche il canale attraverso cui l'edificio ti
-legge: più è forte, più precisa è la contromossa.
+### Pilastro 2 — Il tempo è l'unica risorsa
 
-Il giocatore è costantemente davanti alla stessa domanda: *rafforzo ciò che
-funziona, o rompo lo schema prima che l'edificio lo chiuda?* È la tensione
-centrale del gioco, e va sentita in ogni singola run.
+Una giornata, dall'alba alla corriera delle diciotto. Ogni azione la consuma:
+salire al podere costa più che attraversare la piazza, far parlare un
+reticente costa più che ascoltare un chiacchierone, rileggere i registri
+comunali costa un'ora piena.
 
-### Pilastro 3 — Il perturbante sta nel quotidiano, non nel mostruoso
+Non puoi interrogare tutti. Non puoi visitare tutto. Ogni caso ha più prove di
+quante tu possa raccogliere, e la soluzione è raggiungibile da percorsi
+diversi: **la scarsità non nasconde la verità, obbliga a sceglierne la strada.**
 
-Niente demoni, niente tentacoli gratuiti. L'orrore surreale nasce da oggetti
-domestici presi sul serio: un avviso di condominio che continua ad aggiornarsi
-mentre lo leggi, un vicino che ti ringrazia per una cortesia che non gli hai
-mai fatto, il contatore del gas che conta all'indietro qualcosa che non è gas.
+Conseguenza per il design: nessun caso deve avere un'unica catena deduttiva
+obbligata. Vincolo vincolante per `design-quest-designer`.
 
-Regola vincolante per tutti i reparti: **ogni elemento weird deve avere una
-controparte mondana riconoscibile.** Se un asset non è riconducibile alla vita
-di un palazzo reale, non entra nel gioco.
+### Pilastro 3 — Il paese ricorda quello che hai scritto
+
+La verità di un caso non cambia mai. Il **verbale** sì. Se depositi il nome
+sbagliato, il caso si chiude comunque: la Pretura non torna indietro, e
+Pietrafitta va avanti con un innocente segnato e un colpevole libero.
+
+Le conseguenze sono di accesso, non di punteggio. La sorella di un uomo
+ingiustamente accusato non ti aprirà più la porta — e nel caso successivo era
+lei l'unica testimone della strada alta. Un colpevole lasciato libero compare
+di nuovo, più cauto.
+
+Non esiste schermata di game over. Esiste un paese che si chiude, o che si
+fida.
+
+## Cosa significa "mini-RPG" qui
+
+**C'è:** un personaggio con un nome e una posizione sociale, una mappa piccola
+da percorrere, dialoghi con scelta di approccio, un inventario di documenti,
+una gestione di risorse (tempo, fiducia), e conseguenze persistenti tra i casi.
+
+**Non c'è, per decisione vincolante:** combattimento, punti esperienza, livelli,
+e soprattutto **nessuna statistica che risolva un enigma al posto del
+giocatore.** Nessun tiro di "Intuito" rivela mai un indizio. Se una prova è
+ottenibile, lo è perché il giocatore è andato nel posto giusto e ha chiesto la
+cosa giusta a chi poteva rispondere.
+
+La progressione tra i casi è **accesso**: nuove chiavi, nuovi registri
+consultabili, persone che ora ti parlano. Mai potere.
 
 ## Core loop
 
 ```
-Ti svegli nel tuo appartamento (Piano 9) con un reclamo in mano
+Mattina — un fatto viene segnalato. Ricevi il modulo di verbale vuoto.
   ↓
-Scendi di piano in piano — stanze procedurali, combattimento real-time
+Giri il paese: luoghi, persone, documenti. Ogni azione consuma tempo.
   ↓
-Raccogli Attrezzi (armi) e Cortesie (potenziamenti dai vicini)
+Il quaderno registra automaticamente ciò che hai visto e sentito — fatti, non conclusioni.
   ↓
-Accumuli Abitudini → più forte, più leggibile
+Compili le caselle del verbale combinando le voci del quaderno.
   ↓
-L'edificio reagisce in tempo reale (chiude rotte, schiera contromisure)
+Tre caselle contigue corrette → timbro, si fissano.
   ↓
-Muori / vieni "sfrattato" → torni al Piano 9
+Ore 18: la corriera parte. Depositi il verbale, completo o no.
   ↓
-L'edificio si riorganizza sulla base di ciò che hai fatto
-  ↓
-Il reclamo, però, resta. È l'unica cosa che nessun reset cancella.
+Il paese reagisce a ciò che hai scritto. Il caso successivo parte da lì.
 ```
-
-Il reclamo è la spina dorsale narrativa: **si riempie di firme**. Ogni vicino
-che convinci firma. Le firme persistono tra le run. Le firme sono la vera
-progressione del giocatore — e sono narrative, non statistiche.
 
 ## Cosa rende il gioco diverso
 
 | Convenzione del genere | Cosa facciamo noi |
 |---|---|
-| Meta-progressione = il giocatore diventa più forte | Meta-progressione = l'edificio diventa più mirato; il giocatore accumula alleati |
-| Build ottimale da scoprire e ripetere | Ogni build si autodistrugge se ripetuta |
-| Morte = fallimento da riavvolgere | Morte = notte finita; la mattina è canonica, non un reset |
-| Ambientazione fantasy/sci-fi | Palazzo italiano anni '70, portineria, avvisi, tapparelle |
+| L'investigatore è un professionista con autorità | È un impiegato senza potere, che deve chiedere permesso |
+| Raccogli tutti gli indizi, poi risolvi | Non puoi raccoglierli tutti: il tempo finisce prima |
+| Sbagliare = riprovare il caso | Sbagliare = il caso è chiuso male, e il gioco continua così |
+| L'accusa è un clic sul ritratto del colpevole | L'accusa è un documento articolato che deve reggere in ogni sua parte |
+| Gli indizi sono fisici (impronte, sangue) | Gli indizi sono sociali: orari, debiti, parentele, chi era dove e perché mentiva |
 
 ## Pubblico di riferimento
 
-Giocatori di roguelike d'azione (Hades, Dead Cells, Returnal) che hanno esaurito
-la novità del genere e cercano un sistema che reagisca a loro. Sovrapposizione
-con l'audience di weird fiction giocabile (Inscryption, Anatomy, Kentucky Route
-Zero). Non un gioco per chi cerca power fantasy pulita.
+Giocatori di deduzione pura (Return of the Obra Dinn, The Case of the Golden
+Idol, Her Story) che cercano casi più brevi e un contesto umano invece che
+astratto. Sovrapposizione con lettori di giallo mediterraneo — Camilleri,
+Sciascia — e con chi gioca RPG narrativi brevi per le conseguenze, non per il
+combattimento.
+
+Non è un gioco per chi vuole azione, né per chi vuole essere rassicurato di
+aver ragione.
 
 ## Vincoli creativi (vincolanti per ogni macroarea)
 
-1. Nessun elemento visivo, sonoro o narrativo può uscire dal registro
-   "palazzo abitato". Il weird entra per deformazione del familiare.
-2. L'edificio non parla mai in prima persona. Si esprime solo tramite
-   architettura, avvisi affissi e comportamento degli inquilini.
-3. Nessun tutorial testuale esplicito. Le regole si imparano dai cartelli
-   condominiali, che sono diegetici e inaffidabili.
-4. Il giocatore non ha nome, volto, né voce. È "l'inquilino del Nove".
-5. Le firme sui reclami sono l'unica risorsa persistente narrativamente
-   giustificata. Ogni altra persistenza va approvata dal Director.
+1. **Nessun soprannaturale, nessuna coincidenza risolutiva.** Ogni caso deve
+   essere spiegabile con moventi ordinari: soldi, terra, vergogna, gelosia,
+   paura.
+2. **Ogni bugia di un personaggio ha una ragione difendibile**, e almeno una
+   crepa verificabile altrove. Un testimone non mente mai solo per depistare
+   il giocatore.
+3. **1954 è un vincolo, non una decorazione.** Niente telefoni, niente analisi
+   scientifiche, niente archivi rapidi. Si deduce da registri di carta,
+   orari della corriera, memoria delle persone.
+4. **Il quaderno registra solo fatti osservati, mai conclusioni.** Il gioco non
+   pensa per il giocatore.
+5. **Ogni caso deve essere risolvibile al 100% con le informazioni disponibili
+   in una singola giornata**, pur non essendo possibile raccoglierle tutte.
+   Verificato da `qa-lead` su ogni caso, senza eccezioni.
 
 ## Scope — Vertical Slice
 
-**Obiettivo:** una fetta verticale completa e rifinita, non un gioco intero
-abbozzato. Deve essere sufficiente a far provare i tre pilastri in una sessione
-di 30 minuti.
+**Obiettivo:** tre casi collegati, completi e rifiniti. Tre perché è il minimo
+per far sentire il Pilastro 3: il primo stabilisce, il secondo mostra la
+conseguenza, il terzo la fa pesare.
 
 ### Dentro lo scope
 
 | Area | Deliverable |
 |---|---|
-| Mondo | Il palazzo: 1 edificio, piani 9 → 6 + Piano Meno Uno intravisto |
-| Sistemi | Core combat, sistema Abitudini, sistema Adattamento dell'edificio, economia delle Cortesie |
-| Livelli | 4 piani con layout procedurale + 1 arena di boss |
-| Encounter | 3 archetipi di avversario + 1 boss (l'Amministratore Pro Tempore) |
-| Personaggi | 4 vicini firmatari, ciascuno con condizione per firmare |
-| Narrativa | Arco della prima notte + 3 avvisi condominiali evolutivi |
-| Dialoghi | 4 alberi di dialogo (uno per vicino) |
-| Art direction | Palette, riferimenti, regole di deformazione del familiare |
-| Audio | Direzione sonora + palette SFX domestici |
-| QA | Piano di test dei tre pilastri |
+| Mondo | Pietrafitta: 8 luoghi percorribili + la mappa del paese |
+| Sistemi | Sistema del verbale (caselle, timbro a gruppi di tre), sistema tempo, sistema fiducia/accesso |
+| Casi | **3 casi** con soluzione unica e percorsi deduttivi multipli |
+| Personaggi | 9 abitanti: ciascuno con orario della giornata, un segreto, una ragione per mentire |
+| Narrativa | Arco dei tre casi + il filo che li collega |
+| Dialoghi | Alberi per 9 abitanti × 3 casi, con varianti secondo la fiducia |
+| Documenti | Registri comunali, lettere, orari della corriera — indizi leggibili in-game |
+| Art direction | Palette e riferimenti: provincia appenninica anni '50 |
+| Audio | Direzione sonora + palette SFX ambientali |
+| UI/UX | **Il modulo del verbale e il quaderno** — sono l'interfaccia principale, priorità massima |
+| QA | Piano di test: risolvibilità di ogni caso, assenza di soluzioni ambigue |
 
 ### Fuori scope (esplicitamente rimandato)
 
-- Piani 5 → 1 e il finale vero
-- Sistema di crafting degli Attrezzi
-- Modalità di difficoltà aggiuntive
+- Casi dal quarto in poi e la stagione completa
+- Sistema di reputazione con enti esterni (Pretura, Curia, Carabinieri)
 - Localizzazione (resta `it` master, vedi `production/config.md`)
 - Qualsiasi produzione di codice: la macroarea `prog-*` resta **STUB** finché
   non esiste una codebase reale (vedi `CLAUDE.md`)
@@ -149,21 +181,30 @@ di 30 minuti.
 
 | Rischio | Impatto | Mitigazione |
 |---|---|---|
-| L'Adattamento dell'edificio risulta punitivo anziché stimolante | Alto — uccide il pilastro 1 | Il contro-adattamento chiude rotte ma ne apre sempre almeno una nuova. Mai sottrazione netta. |
-| Le Abitudini sono troppo lente da accumulare per farsi sentire in una run | Alto | Devono maturare entro 2 piani, non entro 2 run. Vincolo per systems designer. |
-| Il registro weird scivola nell'horror generico | Medio | Vincolo creativo 1, verificato da `qa-cross-domain` su ogni asset. |
-| Il palazzo italiano risulta illeggibile a un pubblico internazionale | Medio | Lo specifico culturale è un punto di forza, non un ostacolo: si comunica per immagini, non per riferimenti testuali. |
+| Un caso risulta ambiguo: due soluzioni entrambe difendibili | **Critico** — distrugge la fiducia nel gioco | Ogni caso passa una verifica di unicità formale in `qa_reports/`. Nessun caso entra in produzione senza. |
+| Il giocatore si blocca e la giornata finisce senza progresso | Alto | Ogni caso ha almeno tre catene deduttive indipendenti; fallire una non chiude le altre. |
+| Il verbale a caselle risulta un esercizio di compilazione noioso | Alto | La UI del verbale è priorità massima per `viz-ui-ux-artist`. Il timbro deve essere una piccola ricompensa fisica e soddisfacente. |
+| Il vincolo temporale genera frustrazione anziché tensione | Medio | Il tempo consumato è sempre annunciato prima dell'azione. Mai costi nascosti. |
+| Il "mini-RPG" fa aspettare progressione da RPG e delude | Medio | Comunicare fin dalla prima schermata che si cresce in accesso, non in potenza. Verificato da `qa-ux-researcher`. |
 
 ## Domande aperte per la prossima sessione
 
-1. Il combattimento è ad armi bianche corpo a corpo o include distanza?
-2. Il boss del vertical slice è battibile alla prima notte, o è per design una
-   sconfitta narrativa programmata?
-3. Le Abitudini sono visibili al giocatore come UI esplicita, o vanno intuite?
+1. **Se il verbale è incompleto alle 18, cosa succede?** Si deposita parziale
+   (e la Pretura decide male da sola), oppure il giocatore è obbligato a
+   riempire ogni casella anche tirando a indovinare?
+2. **Il giocatore può rifiutarsi di accusare?** Esiste una casella "ignoti" —
+   onesta ma con un suo costo sociale?
+3. **I tre casi sono in ordine fisso o scegliibile?** L'ordine fisso rende il
+   Pilastro 3 controllabile; la scelta lo rende più personale.
 
 ---
 
 **Prossimi passi consigliati** (in ordine di dipendenza):
-`design-game-designer` (core loop e combat) → `design-systems-designer`
-(Abitudini + Adattamento) → `design-world-designer` (il palazzo e i suoi
-inquilini) → `narr-narrative-designer` (arco della prima notte).
+`design-game-designer` (loop della giornata e meccanica del verbale) →
+`design-systems-designer` (costi in tempo, fiducia, regola del timbro) →
+`design-world-designer` (Pietrafitta e i suoi nove abitanti) →
+`design-quest-designer` (i tre casi) → `narr-narrative-designer` (il filo che
+li lega).
+
+Nota di sequenza: **i nove abitanti vanno definiti prima dei casi**, non dopo.
+I casi nascono dalle relazioni tra le persone, non il contrario.

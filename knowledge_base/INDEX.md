@@ -32,4 +32,4 @@ Aggiorna questo file ogni volta che crei una nuova entità. Ogni agente legge SO
 
 | Nome | Percorso | Agente | Data | Stato |
 |---|---|---|---|---|
-| Visione Creativa — Condominio Nove | [production/creative_vision.md](production/creative_vision.md) | dir-game-director | 2026-08-23 | approved |
+| Visione Creativa — Pietrafitta | [production/creative_vision.md](production/creative_vision.md) | dir-game-director | 2026-08-23 | approved |
