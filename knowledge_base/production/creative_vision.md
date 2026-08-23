@@ -39,11 +39,18 @@ documento**: un modulo prestampato con caselle vuote da riempire con nomi,
 oggetti, ore, moventi. `Il giorno __, alle ore __, __ ha __ ai danni di __,
 servendosi di __, perché __.`
 
-Il verbale si verifica da solo: quando tre caselle contigue sono tutte corrette,
-si fissano con un timbro e non si toccano più. Il giocatore riceve conferma
-del progresso senza mai sapere *quale* singola casella fosse giusta. Questo
-rende impossibile la forza bruta e premia il ragionamento a gruppi — deduci un
-nesso intero, non una variabile isolata.
+Il verbale si verifica da solo: è diviso in **tre commi disgiunti di tre caselle
+ciascuno**, e un comma si fissa col timbro solo quando tutte e tre le sue caselle
+sono corrette. Il giocatore riceve conferma del progresso senza mai sapere *quale*
+singola casella fosse giusta. Questo rende impossibile la forza bruta e premia il
+ragionamento a gruppi — deduci un nesso intero, non una variabile isolata.
+
+> **Correzione di design (2026-08-23, `design-game-designer`, accolta dal Director).**
+> La prima stesura di questo pilastro prevedeva una finestra *scorrevole* di tre
+> caselle contigue. È stata scartata: con `1-2-3` già timbrato, testare `2-3-4`
+> isolerebbe il valore della casella 4, e il timbro degraderebbe in un oracolo
+> casella-per-casella. I commi **disgiunti** garantiscono che ogni conferma resti
+> un predicato congiuntivo su tre incognite.
 
 Il legame tra finzione e sistema è totale: la deduzione non è una metafora del
 lavoro del protagonista, **è** il lavoro del protagonista.
@@ -146,6 +153,11 @@ aver ragione.
 5. **Ogni caso deve essere risolvibile al 100% con le informazioni disponibili
    in una singola giornata**, pur non essendo possibile raccoglierle tutte.
    Verificato da `qa-lead` su ogni caso, senza eccezioni.
+6. **Uno slot di salvataggio automatico. Nessun salvataggio manuale, nessun
+   reload del caso.** Vincolo tecnico con valore creativo: senza di esso ogni
+   difesa contro il tentativo casuale è aggirabile ricaricando, e la giornata
+   smette di essere una decisione. Sollevato da `design-game-designer`, accolto
+   dal Director.
 
 ## Scope — Vertical Slice
 
