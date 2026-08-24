@@ -36,5 +36,5 @@ Aggiorna questo file ogni volta che crei una nuova entità. Ogni agente legge SO
 | Core loop e meccanica del verbale | [systems/core_loop_e_verbale.md](systems/core_loop_e_verbale.md) | design-game-designer | 2026-08-23 | draft |
 | Pietrafitta — paese e 8 luoghi | [regions/pietrafitta.md](regions/pietrafitta.md) | design-world-designer | 2026-08-23 | draft |
 | I nove abitanti e la rete di relazioni | [characters/abitanti_pietrafitta.md](characters/abitanti_pietrafitta.md) | design-world-designer | 2026-08-23 | draft |
-| Standard di rigore dei casi (rev.2) | [qa_reports/standard_rigore_casi.md](qa_reports/standard_rigore_casi.md) | qa-lead | 2026-08-23 | draft |
+| Standard di rigore dei casi (rev.3) | [qa_reports/standard_rigore_casi.md](qa_reports/standard_rigore_casi.md) | qa-lead | 2026-08-24 | draft |
 | Economia del tempo e della fiducia | [systems/economia_tempo_e_fiducia.md](systems/economia_tempo_e_fiducia.md) | design-systems-designer | 2026-08-23 | draft |
