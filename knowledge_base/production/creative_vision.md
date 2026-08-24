@@ -158,6 +158,33 @@ aver ragione.
    difesa contro il tentativo casuale è aggirabile ricaricando, e la giornata
    smette di essere una decisione. Sollevato da `design-game-designer`, accolto
    dal Director.
+7. **Il sopralluogo dell'alba fornisce candidati, mai determinazioni.** Al
+   termine delle 06:00, ora e luogo del fatto devono avere ciascuna almeno
+   **tre valori candidati mutuamente incompatibili** nel quaderno.
+8. **Perdere un testimone non chiude alcun comma.** Nessuna singola fonte può
+   essere l'unico accesso a una casella.
+
+### Ratifiche del Director (2026-08-23)
+
+Due conflitti fra `systems/core_loop_e_verbale.md` e
+`qa_reports/standard_rigore_casi.md`, sollevati da `qa-lead`. **Decisi a favore
+del QA in entrambi i casi**, e promossi a vincoli 7 e 8 qui sopra.
+
+- **Sopralluogo gratuito.** Il game designer garantiva che il sopralluogo delle
+  06:00 desse "≥ 2 delle 3 voci del Comma I". Se quelle due voci sono
+  *determinate*, il comma si riduce a una sola incognita su un dominio di 6 con
+  3 stesure disponibili: **50% di timbro tirando a indovinare**, e il timbro
+  retro-confermerebbe ora e luogo. La garanzia anti-frustrazione produrrebbe
+  essa stessa l'exploit che tutto il sistema esiste per impedire. Vince la
+  lettura del QA: il sopralluogo dà materiale, non risposte.
+- **Ridondanza delle catene.** Il game designer mappava una catena deduttiva
+  per comma, garantendo che perdere un testimone chiudesse "al massimo un
+  comma". Ma un collo di bottiglia per comma significa che un giocatore può
+  perdere un terzo del verbale **senza aver sbagliato nulla** — solo per non
+  aver incrociato quella persona nella giornata. Inaccettabile: contraddice il
+  Pilastro 2, dove la scarsità obbliga a scegliere la strada e non a subire la
+  perdita. La regola del game designer vale come pavimento minimo, non come
+  specifica.
 
 ## Scope — Vertical Slice
 

@@ -44,15 +44,42 @@ description: Checkpointing di sessione. Aggiornato da kb-librarian al termine di
 2. Esiste una casella "ignoti" — accusa rifiutata onestamente, con un costo sociale?
 3. I tre casi sono in ordine fisso o scegliibile dal giocatore?
 
+### Seconda parte di sessione — pipeline agenti (2026-08-23 sera)
+
+**Completati:** `design-game-designer` (loop + verbale), `design-world-designer`
+(paese + nove abitanti), `qa-lead` (standard di rigore rev.2).
+
+**Interrotto dal limite di sessione, da rilanciare:**
+`design-systems-designer` → `systems/economia_tempo_e_fiducia.md`. **Nessun file
+prodotto**, va rifatto da zero col mandato originale.
+
+**Non ancora lanciato:** `design-quest-designer` (i tre casi).
+
+### Stato di blocco — leggere prima di riprendere
+
+`design-quest-designer` **non è lanciabile** finché non esiste la baseline dei
+costi-tempo. Lo standard QA esprime le soglie in frazioni del budget giornaliero
+`B`; senza la tabella dei costi confermata da `design-systems-designer`, nessun
+caso può ricevere PASS pieno — al massimo `PASS condizionato ai costi`.
+
+Ordine obbligato alla ripresa:
+1. `design-systems-designer` → `systems/economia_tempo_e_fiducia.md`
+   (conversione minuti→mezze, costi, fiducia/accesso, verifica di
+   soddisfacibilità delle soglie QA su `B = 24`)
+2. `design-quest-designer` → i tre casi, con lo standard QA come specifica
+3. `qa-lead` → validazione dei tre casi sulla checklist §7
+4. `kb-librarian` → chiusura di sessione
+
+### Decisioni del Director in questa parte di sessione
+- Ratificata la scrittura di `design-world-designer` in `characters/`
+- Ratificati **entrambi** i conflitti QA vs game designer **a favore del QA**
+  (vincoli 7 e 8 della visione creativa)
+- Promosso a vincolo di progetto: uno slot di autosalvataggio, nessun reload
+
 ### Context per prossima sessione
-La visione creativa è approvata ed è la radice della KB: ogni asset successivo deve
-esserle coerente. Il progetto entra in **fase di design**. Ordine di dipendenza
-consigliato: `design-game-designer` (loop della giornata e meccanica del verbale) →
-`design-systems-designer` (costi in tempo, fiducia, regola del timbro) →
-`design-world-designer` (Pietrafitta e i nove abitanti) → `design-quest-designer`
-(i tre casi) → `narr-narrative-designer` (il filo conduttore).
-Le tre domande aperte vanno risolte con `design-game-designer`, perché
-determinano la forma del loop.
+La visione creativa è approvata ed è la radice della KB. Design del loop, del
+mondo e dello standard di qualità sono in `draft` e coerenti fra loro dopo le
+ratifiche. Manca l'anello economico, e da esso dipendono i casi.
 
 ---
 
