@@ -177,6 +177,15 @@ del QA in entrambi i casi**, e promossi a vincoli 7 e 8 qui sopra.
   retro-confermerebbe ora e luogo. La garanzia anti-frustrazione produrrebbe
   essa stessa l'exploit che tutto il sistema esiste per impedire. Vince la
   lettura del QA: il sopralluogo dà materiale, non risposte.
+- **Trasferta a Roccalta (D5).** `design-systems-designer` propone che un documento
+  irraggiungibile in giornata (contabili postali, ricevute della pompa) possa
+  essere richiesto e arrivi come prova **nel caso successivo**. Non era previsto
+  dalla vision originale, ma è lo stesso principio del Pilastro 3 applicato a
+  una prova invece che a una reputazione: il paese ricorda anche ciò che hai
+  chiesto. **Ratificato**, con un vincolo assoluto che lo rende compatibile col
+  vincolo 5: questa prova non può **mai** essere necessaria alla soluzione unica
+  di un caso, solo corroborante. Nessun caso può dipendere da una trasferta
+  fatta nel caso prima.
 - **Ridondanza delle catene.** Il game designer mappava una catena deduttiva
   per comma, garantendo che perdere un testimone chiudesse "al massimo un
   comma". Ma un collo di bottiglia per comma significa che un giocatore può
