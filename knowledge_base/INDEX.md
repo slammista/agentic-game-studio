@@ -38,3 +38,6 @@ Aggiorna questo file ogni volta che crei una nuova entità. Ogni agente legge SO
 | I nove abitanti e la rete di relazioni | [characters/abitanti_pietrafitta.md](characters/abitanti_pietrafitta.md) | design-world-designer | 2026-08-23 | draft |
 | Standard di rigore dei casi (rev.3) | [qa_reports/standard_rigore_casi.md](qa_reports/standard_rigore_casi.md) | qa-lead | 2026-08-24 | draft |
 | Economia del tempo e della fiducia | [systems/economia_tempo_e_fiducia.md](systems/economia_tempo_e_fiducia.md) | design-systems-designer | 2026-08-23 | draft |
+| Caso 1 — I tre vaglia | [quests/caso_01.md](quests/caso_01.md) | dir-game-director | 2026-08-24 | draft |
+| Caso 2 — Gli undici ceppi | [quests/caso_02.md](quests/caso_02.md) | dir-game-director | 2026-08-24 | draft |
+| Caso 3 — Protocollo 217 | [quests/caso_03.md](quests/caso_03.md) | dir-game-director | 2026-08-24 | draft |
